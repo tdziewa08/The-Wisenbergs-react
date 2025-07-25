@@ -9,6 +9,423 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  background-color: red;
+/*
+Welcome to My Stylesheet for The Wisenbergs.html webpage
+*/
+
+* {
+	box-sizing: border-box;
 }
+
+body {
+	margin: 0;
+}
+
+
+ header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-family: "Roboto Serif";
+	font-size: 20px;
+	background-color: #00e4ff;
+	border: 2px solid black;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	font-family: "Orbitron";
+	font-size: 15px;
+	color: red;
+}
+
+
+
+
+
+/*
+=====================================
+Typography
+=====================================
+*/
+
+h1 {
+	font-family: "Roboto Serif";
+	font-size: 4rem;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	color: #00e4ff;
+}
+
+h2 {
+	font-family: "Roboto Serif";
+	font-size: 60px;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	color: #00e4ff;
+}
+
+p {
+	font-family: "Roboto Flex";
+	font-size: 30px;
+	color: black;
+	text-align: center;
+}
+
+li {
+	font-family: "Roboto Flex";
+	font-size: 20px;
+}
+
+.header li {
+	font-family: "Roboto Serif";
+	display: flex;
+	margin: auto;
+	padding: 3px;
+}
+
+.header a {
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 20%;
+}
+
+
+
+
+
+
+
+/*
+=====================================
+Home Page
+=====================================
+*/
+
+.team {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin: 1em auto;
+}
+
+.team img {
+	width: 50%;
+}
+
+
+/*
+=====================================
+Members
+=====================================
+*/
+
+.member {
+	display: flex;
+	align-items: flex-start;
+	border: 3px solid black;
+	border-radius: 2em;
+	margin-top: 15px;
+	background: linear-gradient(to right, white, white, grey);
+}
+
+.member p {
+	height: auto;
+	width: auto;
+	flex: 1;
+	vertical-align: center;
+	font-family: "Roboto Flex";
+	font-size: 30px;
+	padding: 20px;
+}
+
+.member img {
+	max-width: 100%;
+	height: 356px;		/*2 times smaller than original size (1032x712)*/
+	width: 516px; 		/*2 times smaller than original size (1032x712)*/
+	border-radius: 1.85em;
+}
+
+
+
+/*
+=====================================
+Schedule
+=====================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+=====================================
+Stickers
+=====================================
+*/
+
+
+.sticker-grid {
+	display: grid;
+	padding-top: 45px;
+	grid-template-columns: repeat(4, 1fr);
+	width: auto;
+	height: auto;
+	gap: 11px;
+}
+
+.sticker-container {
+	cursor: pointer;
+	height: 226.483px;
+ 	position: relative;
+	width: 301.333px;
+}
+
+.sticker {
+	height: 226.483px;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: all 1s ease-in-out;
+	width: 301.333px;
+}
+
+.sticker img {
+	height: 226.483px;
+	width: 301.333px;
+	max-width: 100%;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.sticker:hover {
+	transform: rotateY(180deg);
+}
+
+.sticker .face {
+	backface-visibility: hidden;
+	height: 226.483px;
+	position: absolute;
+	overflow: hidden;
+	width: 301.333px;
+}
+
+.sticker .back {
+	background: #eaeaed;
+ 	color: #0087cc;
+	line-height: 226.483px;
+	text-align: center;
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+/*
+=====================================
+About Us
+=====================================
+*/
+
+.mission{
+	display: flex;
+	border: 2px solid black;
+	background-color: #f1fab6;
+	font-family: "Roboto Flex";
+	padding: 12px;
+}
+
+
+.stats li {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	background-color: #f1fab6;
+	font-family: "Roboto Flex";
+	color: blue;
+	font-size: 16px;
+	padding: 12px;
+	margin: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+=====================================
+Blogs
+=====================================
+*/
+
+
+
+.blog {
+	font-family: "Roboto Flex";
+	font-size: 30px;
+	text-align: center;
+	color: blueviolet;
+	background-color: darkorange;
+}
+
+.posts {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	width: auto;
+	margin-top: 20px;
+	font-family: "Roboto Flex";
+	font-size: 20px;
+	text-align: center;
+	border: 2px solid black;
+}
+
+.posts li {
+	border: .80px solid red;
+	height: auto;
+	width: auto;
+	padding: 10px;
+}
+
+
+
+
+
+/*
+=====================================
+Experimental Code
+=====================================
+*/
+
+
+/*
+
+.grid-member {
+
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "img description";
+	border: 2px solid black;
+	margin-top: 20px;
+}
+
+.grid-member img {
+	grid-area: img;
+	min-width: 100%;
+	height: 175px;
+}
+
+.grid-member div {
+	grid-area: description;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+.calendar-container {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: auto;
+	width: auto;
+	gap: 13px;
+	padding: 2em;
+	background-color: white;
+}
+
+.date {
+	height: 150px;
+	width: 150px;
+	border: 2px solid black;
+	text-align: right;
+}
+
+
+
+
+
+
+
+.sticker {
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: all 1s ease-in-out;
+	position: absoulte;
+}
+
+
+.sticker .face {
+	backface-visibility: hidden;
+	position: relative;
+	overflow: absoulte;
+}
+
+.sticker .back {
+	transform: rotateY(180deg);;
+	text-align: center;
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+
+OLD FLEXBOX CODE FOR STICKERS
+
+.stickers {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: auto;
+	height: auto;
+	gap: 10px;
+}
+
+.stickers>* {
+	flex: 1 1 200px;
+}
+
+.stickers img {
+	display: flex;
+	max-width: 100%;
+	height: 25%;
+	width: 25%;
+	border: 1px solid black;
+	flex-grow: 1;
+	flex-shrink: 1;
+}*/
