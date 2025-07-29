@@ -7,7 +7,7 @@ export const foundingMembersArray = [
     {
         name: "Troy",
         desc: "Meet Troy, you can find him talkin with Romeo and grabbing the pens and spreading the word on our clever team name. He likes the beers that are golden, aley, or even sometimes...a little Hazzzzyyyyy. He's good for a little song title here, a little president's name there.",
-        img: "./src/assets/Troy.png"
+        img: "https://media.tenor.com/LrfWxXyfTiAAAAAM/face-change-reaction.gif" //"./src/assets/Troy.png"
     },
     {
         name: "Bri",
