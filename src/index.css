@@ -108,16 +108,28 @@ Home Page
 =====================================
 */
 
-.team {
+.home-container {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 50%;
-	margin: 1em auto;
+	background-color: grey;
 }
 
-.team img {
-	width: 50%;
+.home-container > h1 {
+	font-size: 3.5rem;
+	margin-block: .75em;
+}
+
+.team-img-container {
+	height: 462px;
+	width: 659px;
+	border: 1px solid red;
+}
+
+.team-img-container > img {
+	height: 100%;
+	width: 100%;
 }
 
 
@@ -129,28 +141,35 @@ Members
 
 .member {
 	display: flex;
-	align-items: flex-start;
-	border: 3px solid black;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
 	border-radius: 2em;
-	margin-top: 15px;
 	background: linear-gradient(to right, white, white, grey);
+	margin: 1em;
 }
 
 .member p {
-	height: auto;
-	width: auto;
-	flex: 1;
-	vertical-align: center;
+	display: flex;
+	align-items: center;
+	height: 356px;
+	width: 50%;
 	font-family: "Roboto Flex";
-	font-size: 30px;
-	padding: 20px;
+	font-size: 1.75rem;
+	padding: .5em;
+}
+
+.member-img-container {
+	height: 356px;		/*2 times smaller than original size (1032x712)*/
+	width: 516px; 		/*2 times smaller than original size (1032x712)*/
+	border-radius: 50%;
+	margin-right: 2em;
 }
 
 .member img {
-	max-width: 100%;
-	height: 356px;		/*2 times smaller than original size (1032x712)*/
-	width: 516px; 		/*2 times smaller than original size (1032x712)*/
-	border-radius: 1.85em;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
 }
 
 
