@@ -1,4 +1,4 @@
-import heisen from "./assets/sticker-test.png"
+import heisen from "./assets/Cousin.jpg"
 
 export default function Stickers() {
 
