@@ -64,6 +64,135 @@ export const additionalMembersArray = [
     }
 ]
 
+import sticker1 from "./assets/sticker-images/sticker1.png"
+import sticker2 from "./assets/sticker-images/sticker2.png"
+import sticker3 from "./assets/sticker-images/sticker3.png"
+import sticker4 from "./assets/sticker-images/sticker4.png"
+import sticker5 from "./assets/sticker-images/sticker5.png"
+import sticker6 from "./assets/sticker-images/sticker6.png"
+import sticker7 from "./assets/sticker-images/sticker7.png"
+import sticker8 from "./assets/sticker-images/sticker8.png"
+import sticker9 from "./assets/sticker-images/sticker9.png"
+import sticker10 from "./assets/sticker-images/sticker10.png"
+import sticker11 from "./assets/sticker-images/sticker11.png"
+import sticker12 from "./assets/sticker-images/sticker12.png"
+import sticker13 from "./assets/sticker-images/sticker13.png"
+import sticker14 from "./assets/sticker-images/sticker14.png"
+import sticker15 from "./assets/sticker-images/sticker15.png"
+import sticker16 from "./assets/sticker-images/sticker16.png"
+import sticker17 from "./assets/sticker-images/sticker17.png"
+import sticker18 from "./assets/sticker-images/sticker18.png"
+import sticker19 from "./assets/sticker-images/sticker19.png"
+import sticker20 from "./assets/sticker-images/sticker20.png"
+import sticker21 from "./assets/sticker-images/sticker21.png"
+import sticker22 from "./assets/sticker-images/sticker22.png"
+import sticker23 from "./assets/sticker-images/sticker23.png"
+import sticker24 from "./assets/sticker-images/sticker24.png"
+import sticker25 from "./assets/sticker-images/sticker25.png"
+
+export const stickerCollection = [
+    {
+        image: sticker1,
+        desc: "Testing"
+    },
+    {
+        image: sticker2,
+        desc: "Testing Two"
+    },
+    {
+        image: sticker3,
+        desc: "Sticker 3 description"
+    },
+    {
+        image: sticker4,
+        desc: "Sticker 4 description"
+    },
+    {
+        image: sticker5,
+        desc: "Sticker 5 description"
+    },
+    {
+        image: sticker6,
+        desc: "Sticker 6 description"
+    },
+    {
+        image: sticker7,
+        desc: "Sticker 7 description"
+    },
+    {
+        image: sticker8,
+        desc: "Sticker 8 description"
+    },
+    {
+        image: sticker9,
+        desc: "Sticker 9 description"
+    },
+    {
+        image: sticker10,
+        desc: "Sticker 10 description"
+    },
+    {
+        image: sticker11,
+        desc: "Sticker 11 description"
+    },
+    {
+        image: sticker12,
+        desc: "Sticker 12 description"
+    },
+    {
+        image: sticker13,
+        desc: "Sticker 13 description"
+    },
+    {
+        image: sticker14,
+        desc: "Sticker 14 description"
+    },
+    {
+        image: sticker15,
+        desc: "Sticker 15 description"
+    },
+    {
+        image: sticker16,
+        desc: "Sticker 16 description"
+    },
+    {
+        image: sticker17,
+        desc: "Sticker 17 description"
+    },
+    {
+        image: sticker18,
+        desc: "Sticker 18 description"
+    },
+    {
+        image: sticker19,
+        desc: "Sticker 19 description"
+    },
+    {
+        image: sticker20,
+        desc: "Sticker 20 description"
+    },
+    {
+        image: sticker21,
+        desc: "Sticker 21 description"
+    },
+    {
+        image: sticker22,
+        desc: "Sticker 22 description"
+    },
+    {
+        image: sticker23,
+        desc: "Sticker 23 description"
+    },
+    {
+        image: sticker24,
+        desc: "Sticker 24 description"
+    },
+    {
+        image: sticker25,
+        desc: "Sticker 25 description"
+    }
+]
+
 // renderMembers()
 
 // function renderMembers() {

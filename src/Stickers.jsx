@@ -1,81 +1,69 @@
-import heisen from "./assets/Cousin.jpg"
+import React from "react"
+//import heisen from "./assets/Cousin.jpg"
+import { stickerCollection } from "./index.js"   
 
 export default function Stickers() {
 
-const stickerGrid =
-        <div className="stickers">
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
-            <img src={heisen}/>
+const [stickers, setStickers] = React.useState(stickerCollection)
+
+const allStickers = stickers.map(sticker => {
+    return (
+        <div className="sticker-container">
+            <div className="sticker">
+                <div className="face"><img src={sticker.image} alt="THE BACK"/></div>
+                <div className="face back">{sticker.desc}</div>
+            </div>
         </div>
+    )
+})
 
     return (
         <>
             <h1>Stickers</h1>
 		    <p>Here is our collection of Trivia Stickers. Highlight each one to learn more about it.</p>
             <div className="sticker-grid">
-                <div className="sticker-container">
-                    <div className="sticker">
-                        <div className="face"><img src={heisen} alt="THE BACK"/></div>
-                        <div className="face back">THIS</div>
-                    </div>
-                </div>
-                <div className="sticker-container">
-                    <div className="sticker">
-                        <div className="face"><img src={heisen} alt="THE BACK"/></div>
-                        <div className="face back">TOOK</div>
-                    </div>
-                </div>
-                <div className="sticker-container">
-                    <div className="sticker">
-                        <div className="face"><img src={heisen} alt="THE BACK"/></div>
-                        <div className="face back">A</div>
-                    </div>
-                </div>
-                <div className="sticker-container">
-                    <div className="sticker">
-                        <div className="face"><img src={heisen} alt="THE BACK"/></div>
-                        <div className="face back">LOT</div>
-                    </div>
-                </div>
-                <div className="sticker-container">
-                    <div className="sticker">
-                        <div className="face"><img src={heisen} alt="THE BACK"/></div>
-                        <div className="face back">LONGER</div>
-                    </div>
-                </div>
-                <div className="sticker-container">
-                    <div className="sticker">
-                        <div className="face"><img src={heisen} alt="THE BACK"/></div>
-                        <div className="face back">THAN</div>
-                    </div>
-                </div>
-                <div className="sticker-container">
-                    <div className="sticker">
-                        <div className="face"><img src={heisen} alt="THE BACK"/></div>
-                        <div className="face back">I</div>
-                    </div>
-                </div>
-                <div className="sticker-container">
-                    <div className="sticker">
-                        <div className="face"><img src={heisen} alt="THE BACK"/></div>
-                        <div className="face back">THOUGHT</div>
-                    </div>
-                </div>
+                {allStickers}
             </div>
         </>
     )
 }
+
+
+
+
+
+
+
+// THIS MIGHT BE USED FOR SOMETHING OTHER THAN IMAGE URLs IN THIS PROJECT
+// LOCAL IS BETTER AND MAKES MORE SENSE FOR IMAGES...
+
+// import { collection, onSnapshot } from 'firebase/firestore';
+// import { db } from "./firebase.js"
+
+// React.useEffect(() => {
+//         const unsubscribe = onSnapshot(collection(db, "Stickers"), (querySnapshot) => {
+//             // querySnapshot automatically contains all documents from "stickers" collection
+//             const stickerData = [];
+            
+//             querySnapshot.forEach((doc) => {
+//                 // doc.id = document ID
+//                 // doc.data() = document fields
+//                 stickerData.push({
+//                     id: doc.id,
+//                     ...doc.data()
+//                 });
+//             });
+//             setStickers(stickerData);
+//         });
+
+//         return () => unsubscribe();
+//     }, []);
+
+// const test = stickers?.map(item => {
+//    return (
+//         <div key={item.id}>
+//             <img src={item.imageUrl} />
+//             <p>{item.desc}</p>
+//         </div>
+//     )
+// })

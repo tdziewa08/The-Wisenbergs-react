@@ -14,14 +14,14 @@ createRoot(document.getElementById('root')).render(
   Home, Members, Stickers, About pages
 
   HOME PAGE
-    - team picture
+    - team picture DONE
     - team anecdote
     - countdown clock until next trivia event
     - other images
     - tony links?
 
   MEMBERS PAGE
-    - actual pictures of members
+    - actual pictures of members DONE
     - member authored / aapproved descriptions
     - less deliberate / rectangular layout
   
