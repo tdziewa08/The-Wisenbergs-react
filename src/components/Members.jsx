@@ -1,5 +1,5 @@
-import { foundingMembersArray } from "./index.js"
-import { additionalMembersArray } from "./index.js"
+import { foundingMembersArray } from "../index.js"
+import { additionalMembersArray } from "../index.js"
 import { nanoid } from "nanoid"
 
 export default function Members() {

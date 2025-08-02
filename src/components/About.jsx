@@ -12,6 +12,7 @@ export default function About() {
                 <li>Triple Jawns Earned: 1</li>
                 <li>Team Favorite Venue: King's Road Brewing Company, Medford NJ (may be different as of June 15th)</li>
                 <li>Team Least-Favorite Venue: Merryman's Pub, Pitman NJ</li>
+                <li>Worst-Performing Venue: Bonesaw Brewery, Deptford NJ</li>
                 <li>Least Favorite Team: The Whistling Teachers Union</li>
             </div>
         </>
