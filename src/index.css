@@ -200,54 +200,58 @@ Stickers
 
 .sticker-grid {
 	display: grid;
-	padding-top: 45px;
 	grid-template-columns: repeat(4, 1fr);
 	width: auto;
 	height: auto;
 	gap: 11px;
+	padding: .5em;
 }
 
 .sticker-container {
-	cursor: pointer;
 	height: 226.483px;
- 	position: relative;
 	width: 301.333px;
+	cursor: pointer;
+	position: relative;
 }
 
 .sticker {
-	height: 226.483px;
+	height: 100%;
+	width: 100%;
 	position: absolute;
 	transform-style: preserve-3d;
 	transition: all 1s ease-in-out;
-	width: 301.333px;
 }
 
 .sticker img {
-	height: 226.483px;
-	width: 301.333px;
-	max-width: 100%;
-	flex-grow: 1;
-	flex-shrink: 1;
+	height: 100%;
+	width: 100%;
 }
 
 .sticker:hover {
 	transform: rotateY(180deg);
 }
 
-.sticker .face {
-	backface-visibility: hidden;
-	height: 226.483px;
+.sticker > .face {
+	height: 100%;
+	min-width: 100%;
 	position: absolute;
+	backface-visibility: hidden;
 	overflow: hidden;
-	width: 301.333px;
 }
 
 .sticker .back {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background: #eaeaed;
- 	color: #0087cc;
-	line-height: 226.483px;
-	text-align: center;
 	transform: rotateY(180deg);
+}
+
+.sticker .back > p {
+	color: black;
+	font-size: 1.75rem;
+	margin-block: .25em;
 }
 
 
@@ -280,6 +284,32 @@ About Us
 	padding: 12px;
 	margin: 12px;
 
+}
+
+
+
+
+
+/*
+=====================================
+Media Queries
+=====================================
+*/
+
+@media screen and (width >= 2160px) {
+	.sticker-container {
+		height: 450px;
+		width: 602px;
+	}
+
+	/* HAVE TO FIX EACH PAGE'S H1's AND P's TO HAVE CLASSNAMES AND NESTING PROPERLY */
+	h1 {
+		font-size: 5rem;
+	}
+
+	p {
+		font-size: 3rem;
+	}
 }
 
 

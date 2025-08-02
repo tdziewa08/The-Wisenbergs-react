@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import Home from "./Home.jsx"
-import Members from './Members.jsx'
-import Stickers from './Stickers.jsx'
-import About from "./About.jsx"
+import Home from "./components/Home.jsx"
+import Members from './components/Members.jsx'
+import Stickers from './components/Stickers.jsx'
+import About from "./components/About.jsx"
 import Layout from "./components/Layout.jsx"
 
 

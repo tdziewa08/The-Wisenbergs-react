@@ -1,6 +1,6 @@
 import React from "react"
 //import heisen from "./assets/Cousin.jpg"
-import { stickerCollection } from "./index.js"   
+import { stickerCollection } from "../index.js"   
 
 export default function Stickers() {
 
@@ -10,8 +10,14 @@ const allStickers = stickers.map(sticker => {
     return (
         <div className="sticker-container">
             <div className="sticker">
-                <div className="face"><img src={sticker.image} alt="THE BACK"/></div>
-                <div className="face back">{sticker.desc}</div>
+                <div className="face">
+                    <img src={sticker.image} alt="THE FRONT"/>
+                </div>
+                <div className="face back">
+                    <p>{sticker.date}</p>
+                    <p>{sticker.location}</p>
+                    <p>{sticker.round}</p>
+                </div>
             </div>
         </div>
     )
