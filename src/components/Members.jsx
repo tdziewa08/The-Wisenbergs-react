@@ -7,8 +7,11 @@ export default function Members() {
     const foundingMembers = foundingMembersArray.map(member => {
             return (
                 <div className="member" key={nanoid()}>
-                    <div className="member-img-container">
-                        <img src={member.img} alt={member.name} />
+                    <div className="profile">
+                        <div className="member-img-container">
+                            <img src={member.img} alt={member.name} />
+                        </div>
+                        <p>{member.name}</p>
                     </div>
                     <p>{member.desc}</p>
                 </div>
@@ -18,8 +21,11 @@ export default function Members() {
     const additionalMembers = additionalMembersArray.map(member => {
             return (
                 <div className="member" key={nanoid()}>
-                    <div className="member-img-container">
-                        <img src={member.img} alt={member.name} />
+                    <div className="profile">
+                        <div className="member-img-container">
+                            <img src={member.img} alt={member.name} />
+                        </div>
+                        <p>{member.name}</p>
                     </div>
                     <p>{member.desc}</p>
                 </div>
@@ -30,14 +36,14 @@ export default function Members() {
         <>
             <div>
                 <h1>Founding Members</h1>
-                <section id="founding-members-container">
+                <section className="members-container">
                     {foundingMembers}
                 </section>
             </div>
 
             <div>
                 <h1>Additional Members</h1>
-                <section id="additional-members-container">
+                <section className="members-container">
                     {additionalMembers}
                 </section>
             </div>
