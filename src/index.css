@@ -19,6 +19,7 @@ Welcome to My Stylesheet for The Wisenbergs.html webpage
 
 body {
 	margin: 0;
+	background-color: rgb(40, 40, 39);
 }
 
 
@@ -140,21 +141,21 @@ Members
 */
 
 .members-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 1em;
+	row-gap: 1.25em;
+	padding: 0 .75em;
 }
 
 .member {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 80%;
+	width: 100%;
 	border: 2px solid black;
 	border-radius: 2em;
-	/* background: linear-gradient(to right, white, white, grey); */
-	margin: 1em 0;
+	background: lightblue;
 }
 
 .member > .profile {
@@ -174,13 +175,13 @@ Members
 	background-color: red;
 	width: 100%;
 	border-top: 2px solid black;
-	border-radius: 0 0 0 1.25em;
+	border-radius: 0 0 0 1em;
 	margin: 0;
+	padding: 0 .5em;
 }
 
 .member-img-container {
-	width: 100%; 		/*2 times smaller than original size (1032x712)*/
-	/* border-radius: 50%; */
+	width: 100%;
 	border-radius: 2em 0 0 0;
 }
 
@@ -188,16 +189,15 @@ Members
 	display: block;
 	width: 100%;
 	border-radius: 1.85em 0 0 0;
-	/* border-radius: 50%; */
 }
 
-.member p {
+.member > .member-description {
 	display: flex;
 	align-items: center;
 	width: 60%;
 	font-family: "Roboto Flex";
-	font-size: 1.5rem;
-	padding: 1em;
+	font-size: 1.25rem;
+	padding: .25em 1em;
 }
 
 
@@ -231,6 +231,7 @@ Stickers
 	grid-template-columns: repeat(4, 1fr);
 	width: auto;
 	height: auto;
+	background-color: white;
 	gap: 11px;
 	padding: .5em;
 }

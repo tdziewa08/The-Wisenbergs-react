@@ -1,16 +1,16 @@
 //foundingMembers
 import nikki from "./assets/member-images/Skylar.jpg"
 import troy from "./assets/member-images/Cousin.jpg"
-import bri from "./assets/member-images/Marie.jpg"
+import bri from "./assets/member-images/Jane.jpg"
 import allison from "./assets/member-images/Marie.jpg"
 import ryan from "./assets/member-images/Hank.jpg"
 import jim from "./assets/member-images/Jimmy.jpg"
 
 //additionalMembers
 import tyler from "./assets/member-images/Cousin.jpg"
-import erin from "./assets/member-images/Marie.jpg"
+import erin from "./assets/member-images/Lydia.jpg"
 import sean from "./assets/member-images/Mike.jpg"
-import celeste from "./assets/member-images/Skylar.jpg"
+import celeste from "./assets/member-images/Gretchen.jpg"
 import sam from "./assets/member-images/Todd.jpg"
 import thundax from "./assets/member-images/Thundax.jpg"
 
@@ -51,7 +51,7 @@ import mysterySticker3 from "./assets/sticker-images/mystery-sticker3.png"
 export const foundingMembersArray = [
     {
         name: "Nikki",
-        desc: "Meet Nikki, the progenitor of the Wisenbergs trivia team. She looooooooooovvvvvvvvvvessss trivia, bowls, bars, and Holly. She cute and is always on top of the trivia venues, themes, and nearby food places. (This description was authored by founding member, Troy and is subject to review by founding member, Nikki.)",
+        desc: "Meet Nikki, the progenitor of the Wisenbergs trivia team. She looooooooooovvvvvvvvvvessss trivia, bowls, bars, and Holly. She cute and is always on top of the trivia venues, themes, and nearby food places.",
         img: nikki
     },
     {
@@ -79,32 +79,32 @@ export const foundingMembersArray = [
 export const additionalMembersArray = [
     {
         name: "Jim",
-        desc: "Meet Jim, father of founding member, Allison. He has secretly been usurping Bri, and challenging her founding member status. Of all our additional members, Jim has attended the most events, and has become a key piece to The Wisenberg's success. He's good for answering pop-culture and music questions from a time before most of our founding member's were born. He's not too bad at answering questions that involve super-heroes either let me tell ya.",
+        desc: "He has secretly been usurping Bri, and challenging her founding member status. Of all our additional members, Jim has attended the most events, and has become a key piece to The Wisenberg's success.", //He's good for answering pop-culture and music questions from a time before most of our founding member's were born. He's not too bad at answering questions that involve super-heroes either let me tell ya.",
         img: jim
     },
     {
         name: "Tyler",
-        desc: "Meet Tyler, twin brother of founding member, Troy. He comes to a trivia night every now and then, and rarely one that isn't general trivia. He hates how long the music round takes as of late and doesn't come out for much anymore. He's good for a few political and current event questions.",
+        desc: "He comes to a trivia night every now and then, and rarely one that isn't general trivia. He hates how long the music round takes as of late and doesn't come out for much anymore. He's good for a few political and current event questions.",
         img: tyler
     },
     {
         name: "Erin",
-        desc: "Meet Erin, friend of founding member, Bri. She's been to two trivial things events to date, and we hope to see her at more in the future.",
+        desc: "She's been to two trivial things events to date, and we hope to see her at more in the future.",
         img: erin
     },
     {
         name: "Sean",
-        desc: "Meet Sean, boyfriend of additional member, Celeste(Solst). Sean shares similar strengths to Celeste and Jim aswell as knowledge regarding the Star Wars Universe.",
+        desc: "Sean shares similar strengths to Celeste and Jim aswell as knowledge regarding the Star Wars Universe.",
         img: sean
     },
     {
         name: "Celeste",
-        desc: "Meet Celeste (Solst), mother of founding member, Troy, aswell as additional member, Tyler. Much like Jim, Celeste is good for answering pop-culture and music questions from the 70s, 80s, and 90s.",
+        desc: "Much like Jim, Celeste is good for answering pop-culture and music questions from the 70s, 80s, and 90s.",
         img: celeste
     },
     {
         name: "Sam",
-        desc: "Meet Sam, another friend of founding member, Bri. Sam has attended 2 trivial things events...................................................",
+        desc: "Sam has attended 2 trivial things events...................................................",
         img: sam
     },
     {

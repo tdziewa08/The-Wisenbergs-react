@@ -13,7 +13,7 @@ export default function Members() {
                         </div>
                         <p>{member.name}</p>
                     </div>
-                    <p>{member.desc}</p>
+                    <p className="member-description">{member.desc}</p>
                 </div>
             )
     })
@@ -27,7 +27,7 @@ export default function Members() {
                         </div>
                         <p>{member.name}</p>
                     </div>
-                    <p>{member.desc}</p>
+                    <p className="member-description">{member.desc}</p>
                 </div>
             )
     })
