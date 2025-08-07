@@ -91,12 +91,12 @@ li {
 
 .header a {
 	text-decoration: none;
+	margin: 0 1em;
 }
 
 a:hover {
 	opacity: 20%;
 }
-
 
 
 
