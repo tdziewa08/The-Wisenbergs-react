@@ -23,12 +23,12 @@ createRoot(document.getElementById('root')).render(
   MEMBERS PAGE
     - actual pictures of members DONE
     - member authored / aapproved descriptions
-    - less deliberate / rectangular layout
+    - less deliberate / rectangular layout DONE
   
   STICKERS PAGE
-    - image grid of all stickers received over the years
-    - descriptions of the stickers on the back when hovered over
-    - description of the page
+    - image grid of all stickers received over the years DONE
+    - descriptions of the stickers on the back when hovered over DONE
+    - description of the page DONE
   
   ABOUT PAGE
     - fun facts about the team

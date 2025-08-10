@@ -24,13 +24,13 @@ const allStickers = stickers.map(sticker => {
 })
 
     return (
-        <>
+        <div className="sticker-page">
             <h1>Stickers</h1>
 		    <p>Here is our collection of Trivia Stickers. Highlight each one to learn more about it.</p>
             <div className="sticker-grid">
                 {allStickers}
             </div>
-        </>
+        </div>
     )
 }
 

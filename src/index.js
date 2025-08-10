@@ -51,27 +51,27 @@ import mysterySticker3 from "./assets/sticker-images/mystery-sticker3.png"
 export const foundingMembersArray = [
     {
         name: "Nikki",
-        desc: "Meet Nikki, the progenitor of the Wisenbergs trivia team. She looooooooooovvvvvvvvvvessss trivia, bowls, bars, and Holly. She cute and is always on top of the trivia venues, themes, and nearby food places.",
+        desc: "The progenitor of the Wisenbergs trivia team. She looooooooooovvvvvvvvvvessss trivia, bowls, bars, and Holly. She cute and is always on top of the trivia venues, themes, and nearby food places.",
         img: nikki
     },
     {
         name: "Troy",
-        desc: "Meet Troy, you can find him talkin with Romeo and grabbing the pens and spreading the word on our clever team name. He likes the beers that are golden, aley, or even sometimes...a little Hazzzzyyyyy. He's good for a little song title here, a little president's name there.",
+        desc: "You can find him talkin with Romeo and grabbing the pens and spreading the word on our clever team name. He likes the beers that are golden, aley, or even sometimes...a little Hazzzzyyyyy. He's good for a little song title here, a little president's name there.",
         img: troy
     },
     {
         name: "Bri",
-        desc: "INSERT BRI DESCRIPTION HERE",
+        desc: "She's a history buff and beer enthusiast. We haven't seen her much as of late but she'll be back.",
         img: bri
     },
     {
         name: "Allison",
-        desc: "INSERT ALLISON DESCRIPTION HERE",
+        desc: "She's up to date on most current trends and music.",
         img: allison
     },
     {
         name: "Ryan",
-        desc: "INSERT RYAN DESCRIPTION HERE",
+        desc: "He knows most music and entertainment, and can even recognize country songs that most of the team cannot.",
         img: ryan
     }
 ]
@@ -94,12 +94,12 @@ export const additionalMembersArray = [
     },
     {
         name: "Sean",
-        desc: "Sean shares similar strengths to Celeste and Jim aswell as knowledge regarding the Star Wars Universe.",
+        desc: "He shares similar strengths to Celeste and Jim aswell as knowledge regarding the Star Wars Universe.",
         img: sean
     },
     {
         name: "Celeste",
-        desc: "Much like Jim, Celeste is good for answering pop-culture and music questions from the 70s, 80s, and 90s.",
+        desc: "Much like Jim, she is good for answering pop-culture and music questions from the 70s, 80s, and 90s.",
         img: celeste
     },
     {
@@ -107,11 +107,11 @@ export const additionalMembersArray = [
         desc: "Sam has attended 2 trivial things events...................................................",
         img: sam
     },
-    {
-        name: "Thundax",
-        desc: "I am Thundax, I come from HoMM II, remember me. I joined the team back in December of 2024, but they don't invite me out...",
-        img: thundax
-    }
+    // {
+    //     name: "Thundax",
+    //     desc: "I am Thundax, I come from HoMM II, remember me. I joined the team back in December of 2024, but they don't invite me out...",
+    //     img: thundax
+    // }
 ]
 
 export const stickerCollection = [
