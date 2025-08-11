@@ -130,15 +130,65 @@ Home Page
 }
 
 .team-img-container {
-	height: 462px;
-	width: 659px;
-	border: 2px solid #E9D71B;
+	height: auto;
+	width: 55%;
+	border: 2px solid black;
 }
 
 .team-img-container > img {
 	height: 100%;
 	width: 100%;
 }
+
+
+/*
+=====================================
+AI Clock
+=====================================
+*/
+
+.countdown-clock {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 55%;
+    margin: 0;
+    padding: 1em .5em;
+    border: 2px solid black;
+	border-top: none;
+	background-color: #E9D71B;
+    /* background: linear-gradient(135deg, #E9D71B, #ffeb3b); */
+}
+
+.countdown-display {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    min-width: 76px;
+}
+
+.number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
 
 
 /*
@@ -153,6 +203,10 @@ Members
 	column-gap: 1em;
 	row-gap: 1.25em;
 	padding: 0 .75em;
+}
+
+.additional {
+	padding: 0 .75em 1.25em .75em;
 }
 
 .member {
@@ -352,9 +406,6 @@ Media Queries
 		font-size: 3rem;
 	}
 }
-
-
-
 
 
 

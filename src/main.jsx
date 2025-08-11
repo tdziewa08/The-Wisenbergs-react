@@ -15,8 +15,9 @@ createRoot(document.getElementById('root')).render(
 
   HOME PAGE
     - team picture DONE
-    - team anecdote
-    - countdown clock until next trivia event
+    - team 
+    - CHANGE COLOR SCHEME, TO0 INCOMPATIBLE WITH OTHER COLORS
+    - countdown clock until next trivia event DONE
     - other images
     - tony links?
 

@@ -43,7 +43,7 @@ export default function Members() {
 
             <div>
                 <h1>Additional Members</h1>
-                <section className="members-container">
+                <section className="members-container additional">
                     {additionalMembers}
                 </section>
             </div>
