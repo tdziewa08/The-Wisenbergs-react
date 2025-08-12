@@ -13,7 +13,7 @@ export default function Home() {
             </div>
             <CountdownClock targetDate={triviaDate} />
             <p>
-                We are The Wisenberg's trivia team! We compete in trivia contests, twice a month, throughout Gloucester County. Our mission is simple, win one.
+                We are The Wisenberg's! We compete in trivia contests, twice a month, throughout Gloucester County.
             </p>
             <p>
                 Total Wins: 0
