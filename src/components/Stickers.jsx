@@ -26,7 +26,7 @@ const allStickers = stickers.map(sticker => {
     return (
         <div className="sticker-page">
             <h1>Sticker Collection</h1>
-		    <p>Here is our collection of Trivia Stickers. Highlight a sticker to learn more about it.</p>
+		    <p>Here is our collection of trivia stickers. Highlight a sticker to learn more about it.</p>
             <div className="sticker-grid">
                 {allStickers}
             </div>

@@ -19,8 +19,7 @@ Welcome to My Stylesheet for The Wisenbergs.html webpage
 
 body {
 	margin: 0;
-	background-image: linear-gradient(to bottom, white, whitesmoke, white);
-}
+	background-image: linear-gradient(to bottom, white, white, #58d182, white, white)}
 
 
  header {
@@ -56,6 +55,7 @@ h1 {
 	font-family: "Roboto Serif";
 	font-size: 3.5rem;
 	text-align: center;
+	font-family: "Merriweather", serif;
 	margin-block: .75em;
 	/* color: #00e4ff; */
 	/* text-shadow: 1px 1px 1px black; */
@@ -63,10 +63,9 @@ h1 {
 
 h2 {
 	font-family: "Roboto Serif";
-	font-size: 60px;
 	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 60px;
+	font-size: 3rem;
+	margin-block: 1.5rem;
 	/* color: #00e4ff; */
 }
 
@@ -81,16 +80,16 @@ li {
 	font-size: 20px;
 }
 
-.header li {
-	font-family: "Roboto Serif";
+.header {
 	display: flex;
-	margin: auto;
-	padding: 3px;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0;
+	padding: .25em 0;
 }
 
 .header a {
 	text-decoration: none;
-	margin: 0 1em;
 }
 
 a:hover {
@@ -245,11 +244,13 @@ Members
 
 .member-img-container {
 	width: 100%;
+	object-fit: cover;
 	border-radius: 2em 0 0 0;
 }
 
 .member img {
 	display: block;
+	height: 100%;
 	width: 100%;
 	border-radius: 1.05em 0 0 0;
 }
@@ -291,6 +292,10 @@ Stickers
 
 .sticker-page {
 	padding-top: .25em;
+}
+
+.sticker-page > p {
+	font-size: 2rem;
 }
 
 .sticker-grid {
@@ -396,18 +401,61 @@ About Us
     height: 100%; /* This will match the paragraph height */
     object-fit: cover; /* This maintains image quality and aspect ratio */
     object-position: center; /* Centers the image if cropping occurs */
+	border: 2px solid black;
+}
+
+.stats {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 1em;
+	column-gap: 1.25em;
+	margin-top: 3em;
+	padding: 0 1.25em 1em 1.25em;
 }
 
 .stats li {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+	height: 200px;
 	border: 2px solid black;
 	background-color: #E9D71B;
 	font-family: "Roboto Flex";
-	color: blue;
-	font-size: 16px;
+}
+
+.stat-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border-bottom: 2px solid black;
+	height: 30%;
+	width: 100%;
+	margin: 0;
+}
+
+.stat-body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+	width: 100%;
+	background-color: #58d182;
+	margin: 0;
+	padding: .75em;
+}
+
+#triple-jawn-container {
+	height: 200px;
+	object-fit: cover;
+}
+
+#triple-jawn-container > img {
+	height: 100%;
+	width: 100%;
+	border: 2px solid black;
 }
 
 
