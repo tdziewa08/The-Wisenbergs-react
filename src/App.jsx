@@ -1,5 +1,4 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./components/Home.jsx"
 import Members from './components/Members.jsx'
 import Stickers from './components/Stickers.jsx'

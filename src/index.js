@@ -1,18 +1,17 @@
 //foundingMembers
-import nikki from "./assets/member-images/Skylar.jpg"
-import troy from "./assets/member-images/Cousin.jpg"
-import bri from "./assets/member-images/Jane.jpg"
-import allison from "./assets/member-images/Marie.jpg"
-import ryan from "./assets/member-images/Hank.jpg"
-import jim from "./assets/member-images/Jimmy.jpg"
+import nikki from "./assets/new-member-images/Skylar.jpg"
+import troy from "./assets/new-member-images/Flynn.jpg"
+import bri from "./assets/new-member-images/Lydia.jpg"
+import allison from "./assets/new-member-images/Marie.jpg"
+import ryan from "./assets/new-member-images/Hank.jpg"
+import jim from "./assets/new-member-images/Saul.jpg"
 
 //additionalMembers
-import tyler from "./assets/member-images/Cousin.jpg"
-import erin from "./assets/member-images/Lydia.jpg"
-import sean from "./assets/member-images/Mike.jpg"
-import celeste from "./assets/member-images/Gretchen.jpg"
-import sam from "./assets/member-images/Todd.jpg"
-import thundax from "./assets/member-images/Thundax.jpg"
+import tyler from "./assets/new-member-images/Flynn.jpg"
+import erin from "./assets/new-member-images/Lydia.jpg"
+import sean from "./assets/new-member-images/Mike.jpg"
+import celeste from "./assets/new-member-images/Skylar.jpg"
+import sam from "./assets/new-member-images/Todd.jpg"
 
 //stickerCollection
 import sticker1 from "./assets/sticker-images/sticker1.png"
@@ -51,7 +50,7 @@ import mysterySticker3 from "./assets/sticker-images/mystery-sticker3.png"
 export const foundingMembersArray = [
     {
         name: "Nikki",
-        desc: "The progenitor of the Wisenbergs trivia team. She looooooooooovvvvvvvvvvessss trivia, bowls, bars, and Holly. She cute and is always on top of the trivia venues, themes, and nearby food places.",
+        desc: "The progenitor of the Wisenbergs trivia team. She looooooooooovvvvvvvvvvessss trivia. She is always on top of the trivia venues, themes, and nearby food places.",
         img: nikki
     },
     {
@@ -104,14 +103,9 @@ export const additionalMembersArray = [
     },
     {
         name: "Sam",
-        desc: "Sam has attended 2 trivial things events...................................................",
+        desc: "Sam has attended 2 trivia events...................................................",
         img: sam
     },
-    // {
-    //     name: "Thundax",
-    //     desc: "I am Thundax, I come from HoMM II, remember me. I joined the team back in December of 2024, but they don't invite me out...",
-    //     img: thundax
-    // }
 ]
 
 export const stickerCollection = [
@@ -290,30 +284,9 @@ export const stickerCollection = [
         round: "Unknown"
     },
     {
-        image: sticker8, //NEED TO MAKE AN UNKNOWN STICKER
+        image: sticker8, //NEEDED TO MAKE AN UNKNOWN STICKER
         date: "Unknown",
         location: "Unknown",
         round: "Unknown"
     }
 ]
-
-// renderMembers()
-
-// function renderMembers() {
-//     foundingMembersArray.forEach(member => {
-//         foundingMembersContainer.innerHTML += `
-//             <div class="member">
-// 			    <img src=${member.img} alt=${member.name}>
-// 			    <p>${member.desc}</p>
-// 		    </div>
-//         `
-//     })
-//     additionalMembersArray.forEach(member => {
-//         additionalMembersContainer.innerHTML += `
-//             <div class="member">
-// 			    <img src=${member.img} alt=${member.name}>
-// 			    <p>${member.desc}</p>
-// 		    </div>
-//         `
-//     })
-// }

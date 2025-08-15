@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -9,38 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*
-Welcome to My Stylesheet for The Wisenbergs.html webpage
-*/
-
-* {
-	box-sizing: border-box;
-}
-
 body {
 	margin: 0;
-	background-image: linear-gradient(to bottom, white, white, #58d182, white, white)}
+	/* background-image: linear-gradient(to bottom, white, white, #58d182, white); */
+}
 
 
  header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	font-family: "Roboto Serif";
-	font-size: 20px;
+	font-size: 1.25rem;
 	background-color: #E9D71B;
 	border: 2px solid black;
 }
-
-footer {
-	display: flex;
-	flex-direction: row;
-	margin-top: 20px;
-	font-family: "Orbitron";
-	font-size: 15px;
-	color: red;
-}
-
 
 
 
@@ -52,13 +38,10 @@ Typography
 */
 
 h1 {
-	font-family: "Roboto Serif";
 	font-size: 3.5rem;
 	text-align: center;
 	font-family: "Merriweather", serif;
 	margin-block: .75em;
-	/* color: #00e4ff; */
-	/* text-shadow: 1px 1px 1px black; */
 }
 
 h2 {
@@ -66,7 +49,6 @@ h2 {
 	text-align: center;
 	font-size: 3rem;
 	margin-block: 1.5rem;
-	/* color: #00e4ff; */
 }
 
 p {
@@ -76,8 +58,7 @@ p {
 }
 
 li {
-	font-family: "Roboto Flex";
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .header {
@@ -120,13 +101,10 @@ Home Page
 
 .home-container > h1 {
 	margin-block: .75em;
-	/* color: #00e4ff; */
 }
 
 .home-container > p {
 	font-size: 1.75rem;
-	/* color: #E9D71B;
-	text-shadow: 1px 1px 1px black; */
 }
 
 .team-img-container {
@@ -152,36 +130,35 @@ AI Clock
 	align-items: center;
 	justify-content: space-evenly;
 	width: 55%;
-    margin: 0;
-    padding: 1em .5em;
-    border: 2px solid black;
+	border: 2px solid black;
 	border-top: none;
 	background-color: #E9D71B;
-    /* background: linear-gradient(135deg, #E9D71B, #ffeb3b); */
+    margin: 0;
+    padding: 1em .5em;
 }
 
 .countdown-display {
     display: flex;
     justify-content: center;
+	flex-wrap: wrap;
     gap: 1em;
-    flex-wrap: wrap;
 }
 
 .time-unit {
     display: flex;
     flex-direction: column;
     align-items: center;
+	min-width: 76px;
     background: white;
     border: 2px solid black;
     border-radius: 0.5em;
     padding: 0.5em;
-    min-width: 76px;
 }
 
 .number {
+	color: #333;
     font-size: 2em;
     font-weight: bold;
-    color: #333;
 }
 
 .label {
@@ -234,7 +211,6 @@ Members
 	align-items: center;
 	justify-content: center;
 	background-color: #E9D71B;
-	/* background-color: #29773E; */
 	width: 100%;
 	border-top: 2px solid black;
 	border-radius: 0 0 0 1.1em;
@@ -254,6 +230,8 @@ Members
 	width: 100%;
 	border-radius: 1.05em 0 0 0;
 }
+
+
 
 .member > .member-description {
 	display: flex;
@@ -296,22 +274,30 @@ Stickers
 
 .sticker-page > p {
 	font-size: 2rem;
+	padding: 0 1.25em;
 }
 
-.sticker-grid {
+/* .sticker-grid {
+	border: 1px solid red;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	width: auto;
-	height: auto;
 	background-color: white;
 	gap: 11px;
-	padding: .5em;
 	margin-top: 0;
+	padding: .5em;
+} */
+
+.sticker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 11px;
+    margin-top: 0;
+    padding: .5em;
+	background-color: white;
 }
 
 .sticker-container {
-	height: 226.483px;
-	width: 301.333px;
+	aspect-ratio: 1;
 	cursor: pointer;
 	position: relative;
 }
@@ -335,7 +321,7 @@ Stickers
 
 .sticker > .face {
 	height: 100%;
-	min-width: 100%;
+	width: 100%;
 	position: absolute;
 	backface-visibility: hidden;
 	overflow: hidden;
@@ -393,14 +379,13 @@ About Us
 .info-img-container {
     height: 100%;
     width: 35%;
-    display: flex; /* Add this */
 }
 
 .info-img-container > img {
     width: 100%;
-    height: 100%; /* This will match the paragraph height */
-    object-fit: cover; /* This maintains image quality and aspect ratio */
-    object-position: center; /* Centers the image if cropping occurs */
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 	border: 2px solid black;
 }
 
@@ -468,182 +453,186 @@ Media Queries
 =====================================
 */
 
-@media screen and (width >= 2160px) {
-	.sticker-container {
-		height: 450px;
-		width: 602px;
+/* 1080p screen */
+@media screen and (min-width: 1920px) {
+
+	/* TYPOGRAPHY */
+	header {
+		font-size: 1.5rem;
 	}
 
-	/* HAVE TO FIX EACH PAGE'S H1's AND P's TO HAVE CLASSNAMES AND NESTING PROPERLY */
+	h1 {
+		font-size: 4rem;
+	}
+
+	.header {
+		padding: .5em 0;
+	}
+
+	/* HOME */
+	.home-container > p {
+		font-size: 2.25rem;
+	}
+
+	.countdown-clock {
+		padding: 1.25em .75em;
+	}
+
+	.countdown-clock > h3 {
+		font-size: 1.75rem;
+	}
+
+	.time-unit {
+		min-width: 100px;
+	}
+
+	.number {
+		font-size: 2em;
+	}
+
+	.label {
+		font-size: 1rem;
+	}
+
+	/* MEMBERS */
+	.member > .profile > p {
+		font-size: 2rem;
+		border-radius: 0 0 0 .95em;
+	}
+
+	.member-img-container {
+		border-radius: 2em 0 0 0;
+	}
+
+	.member img {
+		border-radius: 1.05em 0 0 0;
+	}
+
+	.member > .member-description {
+		font-size: 1.75rem;
+	}
+
+	/* STICKERS */
+	.sticker-page > p {
+		font-size: 2.25rem;
+	}
+
+	/* ABOUT US */
+	.about-info {
+		height: 450px;
+		margin-bottom: 2em;
+	}
+
+	.mission {
+		font-size: 1.75rem;
+		padding: 1em;
+	}
+
+	.stats li {
+		height: 300px;
+	}
+
+	.stat-header {
+		font-size: 2rem;
+	}
+
+	.stat-body {
+		font-size: 1.75rem;
+	}
+
+	#triple-jawn-container {
+		height: 300px;
+	}
+}
+
+
+
+
+
+
+/* 1440p screen */
+@media screen and (min-width: 2560px) {
+
+	/* TYPOGRAPHY */
+	header {
+		font-size: 1.75rem;
+	}
+
 	h1 {
 		font-size: 5rem;
 	}
 
-	p {
+	/* HOME */
+	.home-container > p {
+		font-size: 2.5rem;
+	}
+
+	.countdown-clock {
+		padding: 1.25em .75em;
+	}
+
+	.countdown-clock > h3 {
+		font-size: 2.25rem;
+	}
+
+	.time-unit {
+		min-width: 125px;
+	}
+
+	.number {
+		font-size: 2.25em;
+	}
+
+	.label {
+		font-size: 1.25rem;
+	}
+
+	/* MEMBERS */
+	.member > .profile > p {
+		font-size: 2.5rem;
+		border-radius: 0 0 0 .8em;
+	}
+
+	.member-img-container {
+		border-radius: 2em 0 0 0;
+	}
+
+	.member img {
+		border-radius: 1em 0 0 0;
+	}
+
+	.member > .member-description {
+		font-size: 2.25rem;
+	}
+
+	/* STICKERS */
+	.sticker-page > p {
 		font-size: 3rem;
 	}
+
+	/* ABOUT US */
+	.about-info {
+		height: 600px;
+	}
+
+	.mission {
+		font-size: 2.25rem;
+		padding: 1em;
+	}
+
+	.stats li {
+		height: 400px;
+	}
+
+	.stat-header {
+		font-size: 2.5rem;
+	}
+
+	.stat-body {
+		font-size: 2.25rem;
+	}
+
+	#triple-jawn-container {
+		height: 400px;
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-/*
-=====================================
-Blogs
-=====================================
-*/
-
-
-
-.blog {
-	font-family: "Roboto Flex";
-	font-size: 30px;
-	text-align: center;
-	color: blueviolet;
-	background-color: darkorange;
-}
-
-.posts {
-	display: flex;
-	flex-direction: column;
-	height: auto;
-	width: auto;
-	margin-top: 20px;
-	font-family: "Roboto Flex";
-	font-size: 20px;
-	text-align: center;
-	border: 2px solid black;
-}
-
-.posts li {
-	border: .80px solid red;
-	height: auto;
-	width: auto;
-	padding: 10px;
-}
-
-
-
-
-
-/*
-=====================================
-Experimental Code
-=====================================
-*/
-
-
-/*
-
-.grid-member {
-
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-template-areas: "img description";
-	border: 2px solid black;
-	margin-top: 20px;
-}
-
-.grid-member img {
-	grid-area: img;
-	min-width: 100%;
-	height: 175px;
-}
-
-.grid-member div {
-	grid-area: description;
-	text-align: center;
-	padding: 10px;
-}
-
-
-
-
-.calendar-container {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	height: auto;
-	width: auto;
-	gap: 13px;
-	padding: 2em;
-	background-color: white;
-}
-
-.date {
-	height: 150px;
-	width: 150px;
-	border: 2px solid black;
-	text-align: right;
-}
-
-
-
-
-
-
-
-.sticker {
-	height: 100%;
-	width: 100%;
-	transform-style: preserve-3d;
-	transition: all 1s ease-in-out;
-	position: absoulte;
-}
-
-
-.sticker .face {
-	backface-visibility: hidden;
-	position: relative;
-	overflow: absoulte;
-}
-
-.sticker .back {
-	transform: rotateY(180deg);;
-	text-align: center;
-}
-
-
-
-*/
-
-
-
-
-
-
-
-
-
-/*
-
-OLD FLEXBOX CODE FOR STICKERS
-
-.stickers {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	width: auto;
-	height: auto;
-	gap: 10px;
-}
-
-.stickers>* {
-	flex: 1 1 200px;
-}
-
-.stickers img {
-	display: flex;
-	max-width: 100%;
-	height: 25%;
-	width: 25%;
-	border: 1px solid black;
-	flex-grow: 1;
-	flex-shrink: 1;
-}*/

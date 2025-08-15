@@ -7,7 +7,7 @@ export default function About() {
             <div>
                 <section className="about-info">
                     <p className="mission">
-                        The Wisenbergs formed in Medford, NJ on March XXth 2024. What started as an experimental leisure activity has now bolossomed into a weekly hang for all of our members. At least once per week we, The Wisenbergs, descend upon a New Jersey brewery in hopes to take home the win. But these breweries got handz and at the current time we are still in search of that elusive dub. Our team's knowledge is diverse and each of our additional members bring something new to the table. We hope to meet and compete against you all sometime down the road....the KING's road.
+                        The Wisenbergs formed in Medford, NJ on March 15th 2024. Twice a month we descend upon a New Jersey brewery in hopes of taking home the win. Our team's knowledge is diverse and each of our additional members bring something new to the table. We hope to meet and compete against you all sometime down the road....the KING's road.
                     </p>
                     <div className="info-img-container">
                         <img src="https://i.dailymail.co.uk/i/pix/2013/11/22/article-2512113-199662CA00000578-518_634x458.jpg" />
@@ -15,7 +15,7 @@ export default function About() {
                 </section>
                 <section className="about-info flipped">
                     <p className="mission">
-                        The Wisenbergs formed in Medford, NJ on March XXth 2024. What started as an experimental leisure activity has now bolossomed into a weekly hang for all of our members. At least once per week we, The Wisenbergs, descend upon a New Jersey brewery in hopes to take home the win. But these breweries got handz and at the current time we are still in search of that elusive dub. Our team's knowledge is diverse and each of our additional members bring something new to the table. We hope to meet and compete against you all sometime down the road....the KING's road.
+                        If you haven't been able to tell by this point, our team is a fan of Breaking Bad. Our team name being inspired by the show's progtagonist, Heisenberg. Mix in a little "wise" to flex our mental prowess and you get "The Wisenberg's".
                     </p>
                     <div className="info-img-container">
                         <img src="https://media.aintitcool.com/media/uploads/legacy/ckeditor_assets/pictures/9664/original/magnets1.jpg?1350328772" />
@@ -23,7 +23,7 @@ export default function About() {
                 </section>
                 <section className="about-info">
                     <p className="mission">
-                        The Wisenbergs formed in Medford, NJ on March XXth 2024. What started as an experimental leisure activity has now bolossomed into a weekly hang for all of our members. At least once per week we, The Wisenbergs, descend upon a New Jersey brewery in hopes to take home the win. But these breweries got handz and at the current time we are still in search of that elusive dub. Our team's knowledge is diverse and each of our additional members bring something new to the table. We hope to meet and compete against you all sometime down the road....the KING's road.
+                        Our team has been less active as of late. It can be hard to find the time when dealing with all the responsibilities of life. Some of our members have even moved to other states. However the fun of playing trivia makes all of the roadblocks and travel worth it. We would encourage anyone looking to hang out with freinds and family to give trivia night's a try.
                     </p>
                     <div className="info-img-container">
                         <img src="https://www.giantfreakinrobot.com/wp-content/uploads/2023/06/breaking-bad-3.jpg" />
@@ -41,21 +41,21 @@ export default function About() {
                 </li>
                 <li>
                     <p className="stat-header">Podium Placings</p>
-                    <p className="stat-body">2</p>
+                    <p className="stat-body">4</p>
                 </li>
                 <li>
                     <p className="stat-header">Triple Jawns Earned</p>
-                    <p className="stat-body">1</p>
+                    <p className="stat-body">4</p>
                 </li>
                 <div id="triple-jawn-container">
                     <img src={tripleJawn} />
                 </div>
                 <li>
-                    <p className="stat-header">Team Favorite Venue</p>
-                    <p className="stat-body">King's Road Brewing Company, Medford NJ (may be different as of June 15th)</p>
+                    <p className="stat-header">Favorite Venue</p>
+                    <p className="stat-body">King's Road Brewing Company, Medford NJ</p>
                 </li>
                 <li>
-                    <p className="stat-header">Team Least-Favorite Venue</p>
+                    <p className="stat-header">Least-Favorite Venue</p>
                     <p className="stat-body">Merryman's Pub, Pitman NJ</p>
                 </li>
                 <li>
