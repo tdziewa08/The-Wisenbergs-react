@@ -52,7 +52,6 @@ h2 {
 }
 
 p {
-	font-family: "Roboto Flex";
 	color: black;
 	text-align: center;
 }
@@ -70,8 +69,9 @@ li {
 }
 
 .header a {
-	text-decoration: none;
+	font-family: "Roboto Slab", serif;
 	color: black;
+	text-decoration: none;
 }
 
 a:hover {
@@ -105,7 +105,8 @@ Home Page
 }
 
 .home-container > p {
-	font-size: 1.75rem;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.65rem;
 }
 
 .team-img-container {
@@ -131,6 +132,7 @@ AI Clock
 	align-items: center;
 	justify-content: space-evenly;
 	width: 55%;
+	font-family: "Roboto", sans-serif;
 	border: 2px solid black;
 	border-top: none;
 	background-color: #E9D71B;
@@ -211,8 +213,9 @@ Members
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #E9D71B;
 	width: 100%;
+	font-family: "Roboto Slab", serif;
+	background-color: #E9D71B;
 	border-top: 2px solid black;
 	border-radius: 0 0 0 1.1em;
 	margin: 0;
@@ -238,7 +241,7 @@ Members
 	display: flex;
 	align-items: center;
 	width: 60%;
-	font-family: "Roboto Flex";
+	font-family: "Roboto", sans-serif;
 	font-size: 1.25rem;
 	padding: .25em 1em;
 }
@@ -274,6 +277,7 @@ Stickers
 }
 
 .sticker-page > p {
+	font-family: "Roboto", sans-serif;
 	font-size: 2rem;
 	padding: 0 1.25em;
 }
@@ -373,7 +377,7 @@ About Us
 	border: 2px solid black;
 	background-color: #E9D71B;
 	font-size: 1.25rem;
-	font-family: "Roboto Flex";
+	font-family: "Roboto", sans-serif;
 	padding: .75em;
 }
 
@@ -414,8 +418,8 @@ About Us
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: "Roboto Slab", serif;
 	font-size: 1.5rem;
-	font-weight: bold;
 	border-bottom: 2px solid black;
 	height: 30%;
 	width: 100%;
@@ -428,6 +432,7 @@ About Us
 	justify-content: center;
 	height: 70%;
 	width: 100%;
+	font-family: "Roboto", sans-serif;
 	background-color: #58d182;
 	margin: 0;
 	padding: .75em;
