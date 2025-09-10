@@ -290,3 +290,10 @@ export const stickerCollection = [
         round: "Unknown"
     }
 ]
+
+    // {
+    //     image: ,
+    //     date: "",
+    //     location: "",
+    //     round: "U"
+    // }
