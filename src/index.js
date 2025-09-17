@@ -41,11 +41,13 @@ import sticker24 from "./assets/sticker-images/sticker24.png"
 import sticker25 from "./assets/sticker-images/sticker25.png"
 import sticker26 from "./assets/sticker-images/sticker26.png"
 import sticker27 from "./assets/sticker-images/sticker27.png"
+import sticker28 from "./assets/sticker-images/sticker28.png"
 
 //unknown stickers, still in the collection
 import mysterySticker1 from "./assets/sticker-images/mystery-sticker1.png"
 import mysterySticker2 from "./assets/sticker-images/mystery-sticker2.png"
 import mysterySticker3 from "./assets/sticker-images/mystery-sticker3.png"
+import mysterySticker4 from "./assets/sticker-images/mystery-sticker4.png"
 
 export const foundingMembersArray = [
     {
@@ -266,6 +268,12 @@ export const stickerCollection = [
         round: "Music? (double check...)"
     },
     {
+        image: sticker28,
+        date: "September 3rd, 2025",
+        location: "King's Road Haddonfield",
+        round: "Sportsball (Round 5)"
+    },
+    {
         image: mysterySticker1,
         date: "Unknown",
         location: "Unknown",
@@ -279,6 +287,12 @@ export const stickerCollection = [
     },
     {
         image: mysterySticker3,
+        date: "Unknown",
+        location: "Unknown",
+        round: "Unknown"
+    },
+    {
+        image: mysterySticker4,
         date: "Unknown",
         location: "Unknown",
         round: "Unknown"
