@@ -21,7 +21,7 @@ import sticker4 from "./assets/sticker-images/sticker4.png"
 import sticker5 from "./assets/sticker-images/sticker5.png"
 import sticker6 from "./assets/sticker-images/sticker6.png"
 import sticker7 from "./assets/sticker-images/sticker7.png"
-import sticker8 from "./assets/sticker-images/sticker8.png" //misplaced unknown sticker from book, my bad
+import sticker8 from "./assets/sticker-images/sticker8.png" //misplaced unknown sticker from book, my bad.
 import sticker9 from "./assets/sticker-images/sticker9.png"
 import sticker10 from "./assets/sticker-images/sticker10.png"
 import sticker11 from "./assets/sticker-images/sticker11.png"
