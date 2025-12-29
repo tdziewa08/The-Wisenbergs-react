@@ -57,5 +57,5 @@ export default function CountdownClock({ targetDate }) {
                 </div>
             </div>
         </div>
-    );
+    )
 }
