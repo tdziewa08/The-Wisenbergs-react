@@ -3,7 +3,7 @@ import theTeam from "../assets/new-member-images/team.jpg"
 
 export default function Home() {
 
-    const triviaDate = new Date('April 7, 2026 19:00:00');
+    const triviaDate = new Date('April 14, 2026 19:00:00');
  
     return (
         <div className="home-container">
