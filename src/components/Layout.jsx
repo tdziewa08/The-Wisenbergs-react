@@ -3,9 +3,9 @@ import Header from "./Header.jsx"
 
 export default function Layout() {
     return (
-        <>
+        <div className="page">
             <Header />
             <Outlet />
-        </>
+        </div>
     )
 }
