@@ -12,7 +12,6 @@ export default function Home() {
                 <p>
                     We are The Wisenberg's! We compete in trivia contests, twice a month, throughout Gloucester County.
                 </p>
-                <CountdownClock targetDate={triviaDate} />
             </div>
                 <div className="team-img-container">
                     {/* <img src="https://www.iwastesomuchtime.com/wp-content/uploads/sites/68/2021/12/9272013181733-22268.jpg" alt="The Wisenberg's team photo"/> */ }
