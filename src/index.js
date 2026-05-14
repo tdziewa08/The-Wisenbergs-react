@@ -265,7 +265,7 @@ export const stickerCollection = [
         image: sticker27,
         date: "July 31st, 2025",
         location: "Santucci's Original Square Pizza",
-        round: "Music? (double check...)"
+        round: "Music"
     },
     {
         image: sticker28,
