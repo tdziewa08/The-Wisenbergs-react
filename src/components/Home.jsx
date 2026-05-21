@@ -1,10 +1,7 @@
 import CountdownClock from './CountdownClock.jsx';
 import theTeam from "../assets/new-member-images/team.jpg"
 
-export default function Home() {
-
-    const triviaDate = new Date('May 26, 2026 19:00:00');
- 
+export default function Home() { 
     return (
         <div className="home-page">
             <div className="home-text">

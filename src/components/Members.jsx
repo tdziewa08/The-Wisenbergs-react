@@ -32,26 +32,26 @@ export default function Members() {
             )
     })
 
-    const additionalMembersNew = additionalMembersArray.map((member, index) => {
+    const additionalMembersNew = additionalMembersArray.map(member => {
         return (
-            <div className="member">
-                <div key={index} className="member-img-container">
+            <div key={nanoid()} className="member">
+                <div className="member-img-container">
                     <img src={member.img} alt={member.name} />
                 </div>
-                <p>{member.name}</p>
-                <p>{member.desc}</p>
+                <p className="member-name">{member.name}</p>
+                <p className="member-desc">{member.desc}</p>
             </div>
         )
     })
 
-    const foundingMembersNew = foundingMembersArray.map((member, index) => {
+    const foundingMembersNew = foundingMembersArray.map(member => {
         return (
-            <div className="member">
-                <div key={index} className="member-img-container">
+            <div key={nanoid()} className="member">
+                <div className="member-img-container">
                     <img src={member.img} alt={member.name} />
                 </div>
-                <p>{member.name}</p>
-                <p>{member.desc}</p>
+                <p className="member-name">{member.name}</p>
+                <p className="member-desc">{member.desc}</p>
             </div>
         )
     })
