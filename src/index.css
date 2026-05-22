@@ -109,7 +109,7 @@ Home Page
 	align-items: center;
 	justify-content: center;
 	/* border: 1px solid black; */
-	margin: 3em 0
+	margin-top: 2em;
 }
 
 .home-text {
@@ -210,13 +210,18 @@ Members
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	margin-top: 2em;
+}
+
+.members-page > h1, h2 {
+	font-size: 3rem;
+	margin-block: 0;
 }
 
 .members-container {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	flex-wrap: wrap;
+	display: grid;
+  	grid-template-columns: repeat(5, 1fr);
+	margin-block: 2em;
 	padding-top: 2px;
 	padding-left: 2px;
 }
@@ -229,7 +234,7 @@ Members
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex: 0 0 20%;
+	min-height: 685px;
 	border: 2px solid black;
 	margin-top: -2px;
 	margin-left: -2px;
@@ -284,6 +289,7 @@ Members
 }
 
 .member-desc {
+	text-align: left;
 	margin-top: 0;
 	padding: .75em;
 }
@@ -326,7 +332,12 @@ Stickers
 
 
 .sticker-page {
-	padding-top: .25em;
+	margin-top: 2em;
+}
+
+.sticker-page > h1 {
+	font-size: 3rem;
+	margin: 0;
 }
 
 .sticker-page > p {
@@ -410,7 +421,47 @@ About Us
 =====================================
 */
 
-.about-info {
+.about-page {
+	border: 1px solid magenta;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2em;
+}
+
+.about-page > h1 {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.main-content {
+	border: 1px solid red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.team-info {
+	border: 1px solid blue;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	align-items: center;
+	justify-content: flex-start;
+	width: 50%;
+}
+
+.photo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+/* .about-info {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -420,21 +471,30 @@ About Us
 
 .flipped {
 	flex-direction: row-reverse;
-}
+} */
 
 .mission {
 	display: flex;
 	align-items: center;
-	height: 100%;
-	width: 60%;
+	width: 100%;
 	border: 2px solid black;
 	background-color: #E9D71B;
 	font-size: 1.25rem;
 	font-family: "Roboto", sans-serif;
+	margin-top: 0;
 	padding: .75em;
 }
 
-.info-img-container {
+#triple-jawn-container {
+	width: 100%;
+}
+
+#triple-jawn-container > img {
+	height: 100%;
+	width: 100%;
+}
+
+/* .info-img-container {
     height: 100%;
     width: 35%;
 }
@@ -445,11 +505,11 @@ About Us
     object-fit: cover;
     object-position: center;
 	border: 2px solid black;
-}
+} */
 
 .stats {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	row-gap: 1em;
 	column-gap: 1.25em;
 	margin-top: 3em;
@@ -473,6 +533,7 @@ About Us
 	justify-content: center;
 	font-family: "Roboto Slab", serif;
 	font-size: 1.5rem;
+	/* font-weight: bold; */
 	border-bottom: 2px solid black;
 	height: 30%;
 	width: 100%;
@@ -489,18 +550,8 @@ About Us
 	background-color: #58d182;
 	margin: 0;
 	padding: .75em;
-}
+} 
 
-#triple-jawn-container {
-	height: 200px;
-	object-fit: cover;
-}
-
-#triple-jawn-container > img {
-	height: 100%;
-	width: 100%;
-	border: 2px solid black;
-}
 
 
 
@@ -649,15 +700,12 @@ Media Queries
 	/* MEMBERS */
 	.member > .profile > p {
 		font-size: 2.5rem;
-		border-radius: 0 0 0 .8em;
 	}
 
 	.member-img-container {
-		border-radius: 2em 0 0 0;
 	}
 
 	.member img {
-		border-radius: 1em 0 0 0;
 	}
 
 	.member > .member-description {
