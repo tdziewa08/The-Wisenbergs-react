@@ -1,6 +1,7 @@
 import CountdownClock from './CountdownClock.jsx';
 import theTeam from "../assets/new-member-images/team.jpg"
 
+
 export default function Home() { 
     return (
         <div className="home-page">
@@ -10,7 +11,7 @@ export default function Home() {
                     We are The Wisenberg's! We compete in trivia contests, twice a month, throughout Gloucester County.
                 </p>
             </div>
-                <div className="team-img-container">
+                <div className="main-img-container">
                     {/* <img src="https://www.iwastesomuchtime.com/wp-content/uploads/sites/68/2021/12/9272013181733-22268.jpg" alt="The Wisenberg's team photo"/> */ }
                     <img src={theTeam} alt="The Wisenberg's team photo"/>
                 </div>
