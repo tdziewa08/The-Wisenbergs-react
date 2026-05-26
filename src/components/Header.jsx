@@ -3,7 +3,7 @@ import CountdownClock from "./CountdownClock"
 
 export default function Header() {
 
-    const triviaDate = new Date('May 26, 2026 19:00:00');
+    const triviaDate = new Date('June 2, 2026 19:00:00');
 
     return (
         <>
