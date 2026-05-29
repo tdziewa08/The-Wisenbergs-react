@@ -15,6 +15,7 @@
 
 body {
 	margin: 0;
+	overflow-x: hidden;
 	/* background-image: linear-gradient(to bottom, white, white, #58d182, white); */
 }
 
@@ -34,18 +35,11 @@ Typography
 =====================================
 */
 
-h1 {
+h1, h2 {
 	font-size: 3rem;
 	text-align: center;
 	font-family: "Merriweather", serif;
-	margin-block: .75em;
-}
-
-h2 {
-	font-family: "Roboto Serif";
-	text-align: center;
-	font-size: 3rem;
-	margin-block: 1.5rem;
+	margin-block: 0;
 }
 
 p {
@@ -101,20 +95,17 @@ Home Page
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100vw;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	background-image: url("./assets/new-member-images/team.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100dvh;
+	/* margin-top: 2em; */
+	padding-top: 2em;
 	/* border: 1px solid black; */
-}
-
-.home-text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 50%;
-	/* border: 1px solid magenta; */
-}
-
-.home-text > p {
-	font-family: "Roboto", sans-serif;
-	font-size: 1.65rem;
 }
 
 .main-img-container {
@@ -203,11 +194,6 @@ Members
 	align-items: center;
 	width: 100%;
 	margin-top: 2em;
-}
-
-.members-page > h1, h2 {
-	font-size: 3rem;
-	margin-block: 0;
 }
 
 .members-container {
@@ -327,11 +313,6 @@ Stickers
 	margin-top: 2em;
 }
 
-.sticker-page > h1 {
-	font-size: 3rem;
-	margin: 0;
-}
-
 .sticker-page > p {
 	font-family: "Roboto", sans-serif;
 	font-size: 2rem;
@@ -419,11 +400,6 @@ About Us
 	align-items: center;
 	justify-content: center;
 	margin-top: 2em;
-}
-
-.about-page > h1 {
-	font-size: 3rem;
-	margin: 0;
 }
 
 .about-page > h2 {
