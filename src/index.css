@@ -95,31 +95,25 @@ Home Page
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 100vw;
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
-	background-image: url("./assets/new-member-images/team.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 100dvh;
-	/* margin-top: 2em; */
+	width: 100%;
 	padding-top: 2em;
-	/* border: 1px solid black; */
+}
+
+.home-page > p {
+	font-size: 1.75rem;
 }
 
 .main-img-container {
 	height: auto;
-	max-width: 50%;
-	border-radius: 2em;
+	width: 100%;
+	/* width: 100vw; */
+	margin-bottom: 2em;
 }
 
 .main-img-container > img {
 	display: block;
 	height: 100%;
 	width: 100%;
-	border-radius: 2em;
-	box-shadow: 2px 2px 3px black;
 }
 
 
@@ -139,12 +133,13 @@ AI Clock
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	background-color: #e8e5bc;
+	/* background-color: #e8e5bc; */
+	background-color: #50dc81;
     padding: 1em .5em;
 	column-gap: 2em;
 }
 
-.countdown-clock > h3 {
+.countdown-clock > h2 {
 	font-size: 1.75rem;
 	margin: 0;
 }
@@ -204,10 +199,6 @@ Members
 	padding-left: 2px;
 }
 
-/* .additional {
-	padding: 0 .75em 1.25em .75em;
-} */
-
 .member {
 	display: flex;
 	flex-direction: column;
@@ -217,31 +208,6 @@ Members
 	margin-top: -2px;
 	margin-left: -2px;
 }
-
-
-/* .member > .profile {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	font-size: 1.75rem;
-	border-right: 2px solid black;
-	border-radius: 2em 0 0 2em;
-}
-
-.member > .profile > p {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	font-family: "Roboto Slab", serif;
-	background-color: #E9D71B;
-	border-top: 2px solid black;
-	border-radius: 0 0 0 1.1em;
-	margin: 0;
-	padding: 0 .5em;
-} */
 
 .member-img-container {
 	width: 100%;
@@ -261,7 +227,8 @@ Members
 	border-right: none;
 	font-size: 1.25rem;
 	font-weight: bold;
-	background-color: rgb(123, 211, 240);
+	/* background-color: rgb(123, 211, 240); */
+	background-color: #E9D71B;
 	margin-top: 0;
 	padding: .5em 0;
 }
@@ -285,22 +252,6 @@ Members
 
 
 
-/*
-=====================================
-Schedule
-=====================================
-*/
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 =====================================
@@ -315,19 +266,9 @@ Stickers
 
 .sticker-page > p {
 	font-family: "Roboto", sans-serif;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	padding: 0 1.25em;
 }
-
-/* .sticker-grid {
-	border: 1px solid red;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	background-color: white;
-	gap: 11px;
-	margin-top: 0;
-	padding: .5em;
-} */
 
 .sticker-grid {
     display: grid;
@@ -403,7 +344,6 @@ About Us
 }
 
 .about-page > h2 {
-	font-size: 2.75rem;
 	margin-block: .25em;
 }
 
@@ -419,7 +359,7 @@ About Us
 	display: flex;
 	align-items: center;
 	width: 100%;
-	font-size: 1.25rem;
+	font-size: 1.75rem;
 	font-family: "Roboto", sans-serif;
 	margin-top: 1em;
 	/* padding: .75em; */
@@ -457,7 +397,6 @@ About Us
 
 .team-stats {
 	display: flex;
-	/* flex-direction: row-reverse; */
 	align-items: center;
 	justify-content: center;
 	width: 100%;
@@ -477,19 +416,6 @@ About Us
 #triple-jawn-container > p {
 	font-size: 1.05rem;
 }
-
-/* .info-img-container {
-    height: 100%;
-    width: 35%;
-}
-
-.info-img-container > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-	border: 2px solid black;
-} */
 
 .stats {
 	display: grid;
@@ -530,7 +456,8 @@ About Us
 	height: 70%;
 	width: 100%;
 	font-family: "Roboto", sans-serif;
-	background-color: #58d182;
+	/* background-color: #58d182; */
+	background-color: #50dc81;
 	margin: 0;
 	padding: .75em;
 } 
@@ -546,24 +473,23 @@ Media Queries
 =====================================
 */
 
-/* 1080p screen */
-@media screen and (min-width: 1920px) {
+/* 1440p screen */
+@media screen and (min-width: 2560px) {
 
 	/* TYPOGRAPHY */
-	/* header {
-		font-size: 1.5rem;
+
+	.header {
+		font-size: 2.25rem;
+		column-gap: 6.75em;
 	}
 
-	h1 {
+	h1, h2 {
 		font-size: 4rem;
 	}
 
-	.header {
-		padding: .5em 0;
-	} */
-
 	/* HOME */
-	/* .home-container > p {
+
+	.home-page > p {
 		font-size: 2.25rem;
 	}
 
@@ -571,12 +497,12 @@ Media Queries
 		padding: 1.25em .75em;
 	}
 
-	.countdown-clock > h3 {
-		font-size: 1.75rem;
+	.countdown-clock > h2 {
+		font-size: 2.75rem;
 	}
 
 	.time-unit {
-		min-width: 100px;
+		width: 225px;
 	}
 
 	.number {
@@ -584,145 +510,55 @@ Media Queries
 	}
 
 	.label {
-		font-size: 1rem;
-	} */
+		font-size: 1.875rem;
+	}
 
 	/* MEMBERS */
-	/* .member > .profile > p {
-		font-size: 2rem;
-		border-radius: 0 0 0 .95em;
+
+	.member {
+		min-height: 890px;
 	}
 
-	.member-img-container {
-		border-radius: 2em 0 0 0;
+	.member-name {
+		font-size: 1.5rem;
 	}
 
-	.member img {
-		border-radius: 1.05em 0 0 0;
-	}
-
-	.member > .member-description {
-		font-size: 1.75rem;
-	} */
-
-	/* STICKERS */
-	/* .sticker-page > p {
-		font-size: 2.25rem;
-	} */
-
-	/* ABOUT US */
-	/* .about-info {
-		height: 450px;
-		margin-bottom: 2em;
-	}
-
-	.mission {
-		font-size: 1.75rem;
-		padding: 1em;
-	}
-
-	.stats li {
-		height: 300px;
-	}
-
-	.stat-header {
-		font-size: 2rem;
-	}
-
-	.stat-body {
-		font-size: 1.75rem;
-	}
-
-	#triple-jawn-container {
-		height: 300px;
-	} */
-}
-
-
-
-
-
-
-/* 1440p screen */
-@media screen and (min-width: 2560px) {
-
-	/* TYPOGRAPHY */
-	header {
-		font-size: 1.75rem;
-	}
-
-	h1 {
-		font-size: 5rem;
-	}
-
-	/* HOME */
-	.home-container > p {
-		font-size: 2.5rem;
-	}
-
-	.countdown-clock {
-		padding: 1.25em .75em;
-	}
-
-	.countdown-clock > h3 {
-		font-size: 2.25rem;
-	}
-
-	.time-unit {
-		min-width: 125px;
-	}
-
-	.number {
-		font-size: 2.25em;
-	}
-
-	.label {
+	.member-desc {
 		font-size: 1.25rem;
 	}
 
-	/* MEMBERS */
-	.member > .profile > p {
-		font-size: 2.5rem;
-	}
-
-	.member-img-container {
-	}
-
-	.member img {
-	}
-
-	.member > .member-description {
-		font-size: 2.25rem;
-	}
-
 	/* STICKERS */
+
 	.sticker-page > p {
-		font-size: 3rem;
+		font-size: 2.25rem;
 	}
 
 	/* ABOUT US */
-	.about-info {
-		height: 600px;
-	}
 
+	.about-page > h2 {
+		font-size: 4rem;
+	}
 	.mission {
-		font-size: 2.25rem;
-		padding: 1em;
-	}
-
-	.stats li {
-		height: 400px;
-	}
-
-	.stat-header {
-		font-size: 2.5rem;
-	}
-
-	.stat-body {
 		font-size: 2.25rem;
 	}
 
 	#triple-jawn-container {
-		height: 400px;
+		width: 50%;
+	}
+
+	#triple-jawn-container > p {
+		font-size: 1.25rem;
+	}
+
+	.stats > li {
+		height: 230px;
+	}
+
+	.stat-header {
+		font-size: 2rem;
+	}
+
+	.stat-body {
+		font-size: 1.5rem;
 	}
 }

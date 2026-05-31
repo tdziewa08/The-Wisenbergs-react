@@ -37,7 +37,7 @@ export default function CountdownClock({ targetDate }) {
 
     return (
         <div className="countdown-clock">
-            <h3>Next Trivia In:</h3>
+            <h2>Next Trivia In:</h2>
             <div className="countdown-display">
                 <div className="time-unit">
                     <span className="number">{timeLeft.days}</span>

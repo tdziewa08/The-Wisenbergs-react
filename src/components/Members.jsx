@@ -57,24 +57,13 @@ export default function Members() {
     })
 
     return (
-        // <div className="members-page">
-        //     <h1>Founding Members</h1>
-        //     <section className="members-container">
-        //         {foundingMembers}
-        //     </section>
-        //     <h2>Additional Members</h2>
-        //     <section className="members-container additional">
-        //         {additionalMembers}
-        //     </section>
-        // </div>
-
         <div className="members-page">
             <h1>Founding Members</h1>
             <section className="members-container">
                 {foundingMembersNew}
             </section>
             <h2>Additional Members</h2>
-            <section className="members-container additional">
+            <section className="members-container">
                 {additionalMembersNew}
             </section>
         </div>

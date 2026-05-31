@@ -1,5 +1,4 @@
 import React from "react"
-//import heisen from "./assets/Cousin.jpg"
 import { stickerCollection } from "../index.js"   
 
 export default function Stickers() {
@@ -33,43 +32,3 @@ const allStickers = stickers.map(sticker => {
         </div>
     )
 }
-
-
-
-
-
-
-
-// THIS MIGHT BE USED FOR SOMETHING OTHER THAN IMAGE URLs IN THIS PROJECT
-// LOCAL IS BETTER AND MAKES MORE SENSE FOR IMAGES...
-
-// import { collection, onSnapshot } from 'firebase/firestore';
-// import { db } from "./firebase.js"
-
-// React.useEffect(() => {
-//         const unsubscribe = onSnapshot(collection(db, "Stickers"), (querySnapshot) => {
-//             // querySnapshot automatically contains all documents from "stickers" collection
-//             const stickerData = [];
-            
-//             querySnapshot.forEach((doc) => {
-//                 // doc.id = document ID
-//                 // doc.data() = document fields
-//                 stickerData.push({
-//                     id: doc.id,
-//                     ...doc.data()
-//                 });
-//             });
-//             setStickers(stickerData);
-//         });
-
-//         return () => unsubscribe();
-//     }, []);
-
-// const test = stickers?.map(item => {
-//    return (
-//         <div key={item.id}>
-//             <img src={item.imageUrl} />
-//             <p>{item.desc}</p>
-//         </div>
-//     )
-// })

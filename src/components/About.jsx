@@ -25,7 +25,7 @@ export default function About() {
                     </div> */}
                 </div>
             </section>
-            <h2>Team Stats</h2>
+            <h2>Team Statistics</h2>
             <section className="team-stats">
                 <div id="triple-jawn-container">
                     <img src={tripleJawn} alt="trivia bonus card"/>
