@@ -15,17 +15,15 @@
 
 body {
 	margin: 0;
+	overflow-x: hidden;
 	/* background-image: linear-gradient(to bottom, white, white, #58d182, white); */
 }
 
-
- header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	font-size: 1.25rem;
-	background-color: #E9D71B;
-	border: 2px solid black;
+.page {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	/* border: 1px solid red; */
 }
 
 
@@ -37,18 +35,11 @@ Typography
 =====================================
 */
 
-h1 {
-	font-size: 3.5rem;
+h1, h2 {
+	font-size: 3rem;
 	text-align: center;
 	font-family: "Merriweather", serif;
-	margin-block: .75em;
-}
-
-h2 {
-	font-family: "Roboto Serif";
-	text-align: center;
-	font-size: 3rem;
-	margin-block: 1.5rem;
+	margin-block: 0;
 }
 
 p {
@@ -63,12 +54,18 @@ li {
 .header {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
+	font-size: 1.5rem;
+	background-color: #E9D71B;
+	border: 2px solid black;
+	border-left: none;
+	border-right: none;
 	margin: 0;
 	padding: .25em 0;
+	column-gap: 7.5em;
 }
 
-.header a {
+.header > a {
 	font-family: "Roboto Slab", serif;
 	color: black;
 	text-decoration: none;
@@ -93,29 +90,28 @@ Home Page
 =====================================
 */
 
-.home-container {
+.home-page {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
+	padding-top: 2em;
 }
 
-.home-container > h1 {
-	margin-block: .75em;
+.home-page > p {
+	font-size: 1.75rem;
 }
 
-.home-container > p {
-	font-family: "Roboto", sans-serif;
-	font-size: 1.65rem;
-}
-
-.team-img-container {
+.main-img-container {
 	height: auto;
-	width: 55%;
-	border: 2px solid black;
+	width: 100%;
+	/* width: 100vw; */
+	margin-bottom: 2em;
 }
 
-.team-img-container > img {
+.main-img-container > img {
+	display: block;
 	height: 100%;
 	width: 100%;
 }
@@ -130,42 +126,52 @@ AI Clock
 .countdown-clock {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
-	width: 55%;
+	justify-content: center;
+	width: 100%;
 	font-family: "Roboto", sans-serif;
 	border: 2px solid black;
 	border-top: none;
-	background-color: #E9D71B;
-    margin: 0;
+	border-left: none;
+	border-right: none;
+	/* background-color: #e8e5bc; */
+	background-color: #50dc81;
     padding: 1em .5em;
+	column-gap: 2em;
+}
+
+.countdown-clock > h2 {
+	font-size: 1.75rem;
+	margin: 0;
 }
 
 .countdown-display {
     display: flex;
+	align-items: center;
     justify-content: center;
-	flex-wrap: wrap;
-    gap: 1em;
+    column-gap: 1em;
 }
 
 .time-unit {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-	min-width: 76px;
+	justify-content: center;
+	width: 125px;
     background: white;
     border: 2px solid black;
     border-radius: 0.5em;
-    padding: 0.5em;
+    padding: .5em 5em;
+	column-gap: .5em;
 }
 
 .number {
 	color: #333;
-    font-size: 2em;
+    font-size: 1.375rem;
     font-weight: bold;
 }
 
 .label {
-    font-size: 0.8em;
+    font-size: 1.25rem;
     text-transform: uppercase;
 }
 
@@ -177,62 +183,60 @@ Members
 =====================================
 */
 
-.members-container {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: 1em;
-	row-gap: 1.25em;
-	padding: 0 .75em;
+.members-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 2em;
 }
 
-.additional {
-	padding: 0 .75em 1.25em .75em;
+.members-container {
+	display: grid;
+  	grid-template-columns: repeat(5, 1fr);
+	margin-block: 2em;
+	padding-top: 2px;
+	padding-left: 2px;
 }
 
 .member {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	border: 2px solid black;
-	border-radius: 2em;
-}
-
-.member > .profile {
-	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	width: 40%;
-	font-size: 1.75rem;
-	border-right: 2px solid black;
-	border-radius: 2em 0 0 2em;
-}
-
-.member > .profile > p {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	font-family: "Roboto Slab", serif;
-	background-color: #E9D71B;
-	border-top: 2px solid black;
-	border-radius: 0 0 0 1.1em;
-	margin: 0;
-	padding: 0 .5em;
+	min-height: 685px;
+	border: 2px solid black;
+	margin-top: -2px;
+	margin-left: -2px;
 }
 
 .member-img-container {
 	width: 100%;
 	object-fit: cover;
-	border-radius: 2em 0 0 0;
 }
 
 .member img {
 	display: block;
 	height: 100%;
 	width: 100%;
-	border-radius: 1.05em 0 0 0;
+}
+
+.member-name {
+	width: 100%;
+	border: 1px solid black;
+	border-left: none;
+	border-right: none;
+	font-size: 1.25rem;
+	font-weight: bold;
+	/* background-color: rgb(123, 211, 240); */
+	background-color: #E9D71B;
+	margin-top: 0;
+	padding: .5em 0;
+}
+
+.member-desc {
+	text-align: left;
+	margin-top: 0;
+	padding: .75em;
 }
 
 
@@ -248,22 +252,6 @@ Members
 
 
 
-/*
-=====================================
-Schedule
-=====================================
-*/
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 =====================================
@@ -273,29 +261,19 @@ Stickers
 
 
 .sticker-page {
-	padding-top: .25em;
+	margin-top: 2em;
 }
 
 .sticker-page > p {
 	font-family: "Roboto", sans-serif;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	padding: 0 1.25em;
 }
-
-/* .sticker-grid {
-	border: 1px solid red;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	background-color: white;
-	gap: 11px;
-	margin-top: 0;
-	padding: .5em;
-} */
 
 .sticker-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 11px;
+    gap: 1em;
     margin-top: 0;
     padding: .5em;
 	background-color: white;
@@ -357,50 +335,94 @@ About Us
 =====================================
 */
 
-.about-info {
+.about-page {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
-	height: 305px;
-	margin-bottom: 2em;
+	justify-content: center;
+	margin-top: 2em;
 }
 
-.flipped {
-	flex-direction: row-reverse;
+.about-page > h2 {
+	margin-block: .25em;
+}
+
+.team-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 .mission {
 	display: flex;
 	align-items: center;
-	height: 100%;
-	width: 60%;
-	border: 2px solid black;
-	background-color: #E9D71B;
-	font-size: 1.25rem;
+	width: 100%;
+	font-size: 1.75rem;
 	font-family: "Roboto", sans-serif;
-	padding: .75em;
+	margin-top: 1em;
+	/* padding: .75em; */
 }
 
-.info-img-container {
-    height: 100%;
-    width: 35%;
+.photo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
-.info-img-container > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-	border: 2px solid black;
+.team-img-cluster {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.team-img-cluster > .team-img-container {
+	width: 50%;
+}
+
+.team-img-container {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.team-img-container > img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+.team-stats {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 1em 0;
+}
+
+#triple-jawn-container {
+	/* align-self: flex-start; */
+	width: 50%;
+}
+
+#triple-jawn-container > img {
+	height: 100%;
+	width: 100%;
+}
+
+#triple-jawn-container > p {
+	font-size: 1.05rem;
 }
 
 .stats {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	width: 50%;
+	grid-template-columns: repeat(2, 1fr);
 	row-gap: 1em;
-	column-gap: 1.25em;
-	margin-top: 3em;
-	padding: 0 1.25em 1em 1.25em;
+	column-gap: 1em;
 }
 
 .stats li {
@@ -420,6 +442,7 @@ About Us
 	justify-content: center;
 	font-family: "Roboto Slab", serif;
 	font-size: 1.5rem;
+	/* font-weight: bold; */
 	border-bottom: 2px solid black;
 	height: 30%;
 	width: 100%;
@@ -433,21 +456,12 @@ About Us
 	height: 70%;
 	width: 100%;
 	font-family: "Roboto", sans-serif;
-	background-color: #58d182;
+	/* background-color: #58d182; */
+	background-color: #50dc81;
 	margin: 0;
 	padding: .75em;
-}
+} 
 
-#triple-jawn-container {
-	height: 200px;
-	object-fit: cover;
-}
-
-#triple-jawn-container > img {
-	height: 100%;
-	width: 100%;
-	border: 2px solid black;
-}
 
 
 
@@ -459,24 +473,23 @@ Media Queries
 =====================================
 */
 
-/* 1080p screen */
-@media screen and (min-width: 1920px) {
+/* 1440p screen */
+@media screen and (min-width: 2560px) {
 
 	/* TYPOGRAPHY */
-	header {
-		font-size: 1.5rem;
+
+	.header {
+		font-size: 2.25rem;
+		column-gap: 6.75em;
 	}
 
-	h1 {
+	h1, h2 {
 		font-size: 4rem;
 	}
 
-	.header {
-		padding: .5em 0;
-	}
-
 	/* HOME */
-	.home-container > p {
+
+	.home-page > p {
 		font-size: 2.25rem;
 	}
 
@@ -484,12 +497,12 @@ Media Queries
 		padding: 1.25em .75em;
 	}
 
-	.countdown-clock > h3 {
-		font-size: 1.75rem;
+	.countdown-clock > h2 {
+		font-size: 2.75rem;
 	}
 
 	.time-unit {
-		min-width: 100px;
+		width: 225px;
 	}
 
 	.number {
@@ -497,148 +510,55 @@ Media Queries
 	}
 
 	.label {
-		font-size: 1rem;
+		font-size: 1.875rem;
 	}
 
 	/* MEMBERS */
-	.member > .profile > p {
-		font-size: 2rem;
-		border-radius: 0 0 0 .95em;
+
+	.member {
+		min-height: 890px;
 	}
 
-	.member-img-container {
-		border-radius: 2em 0 0 0;
+	.member-name {
+		font-size: 1.5rem;
 	}
 
-	.member img {
-		border-radius: 1.05em 0 0 0;
-	}
-
-	.member > .member-description {
-		font-size: 1.75rem;
-	}
-
-	/* STICKERS */
-	.sticker-page > p {
-		font-size: 2.25rem;
-	}
-
-	/* ABOUT US */
-	.about-info {
-		height: 450px;
-		margin-bottom: 2em;
-	}
-
-	.mission {
-		font-size: 1.75rem;
-		padding: 1em;
-	}
-
-	.stats li {
-		height: 300px;
-	}
-
-	.stat-header {
-		font-size: 2rem;
-	}
-
-	.stat-body {
-		font-size: 1.75rem;
-	}
-
-	#triple-jawn-container {
-		height: 300px;
-	}
-}
-
-
-
-
-
-
-/* 1440p screen */
-@media screen and (min-width: 2560px) {
-
-	/* TYPOGRAPHY */
-	header {
-		font-size: 1.75rem;
-	}
-
-	h1 {
-		font-size: 5rem;
-	}
-
-	/* HOME */
-	.home-container > p {
-		font-size: 2.5rem;
-	}
-
-	.countdown-clock {
-		padding: 1.25em .75em;
-	}
-
-	.countdown-clock > h3 {
-		font-size: 2.25rem;
-	}
-
-	.time-unit {
-		min-width: 125px;
-	}
-
-	.number {
-		font-size: 2.25em;
-	}
-
-	.label {
+	.member-desc {
 		font-size: 1.25rem;
 	}
 
-	/* MEMBERS */
-	.member > .profile > p {
-		font-size: 2.5rem;
-		border-radius: 0 0 0 .8em;
-	}
-
-	.member-img-container {
-		border-radius: 2em 0 0 0;
-	}
-
-	.member img {
-		border-radius: 1em 0 0 0;
-	}
-
-	.member > .member-description {
-		font-size: 2.25rem;
-	}
-
 	/* STICKERS */
+
 	.sticker-page > p {
-		font-size: 3rem;
+		font-size: 2.25rem;
 	}
 
 	/* ABOUT US */
-	.about-info {
-		height: 600px;
-	}
 
+	.about-page > h2 {
+		font-size: 4rem;
+	}
 	.mission {
-		font-size: 2.25rem;
-		padding: 1em;
-	}
-
-	.stats li {
-		height: 400px;
-	}
-
-	.stat-header {
-		font-size: 2.5rem;
-	}
-
-	.stat-body {
 		font-size: 2.25rem;
 	}
 
 	#triple-jawn-container {
-		height: 400px;
+		width: 50%;
+	}
+
+	#triple-jawn-container > p {
+		font-size: 1.25rem;
+	}
+
+	.stats > li {
+		height: 230px;
+	}
+
+	.stat-header {
+		font-size: 2rem;
+	}
+
+	.stat-body {
+		font-size: 1.5rem;
 	}
 }

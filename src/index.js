@@ -61,11 +61,6 @@ export const foundingMembersArray = [
         img: troy
     },
     {
-        name: "Bri",
-        desc: "She's a history buff and beer enthusiast. We haven't seen her much as of late but she'll be back.",
-        img: bri
-    },
-    {
         name: "Allison",
         desc: "She's up to date on most current trends and music.",
         img: allison
@@ -74,6 +69,11 @@ export const foundingMembersArray = [
         name: "Ryan",
         desc: "He knows most music and entertainment, and can even recognize country songs that most of the team cannot.",
         img: ryan
+    },
+    {
+        name: "Bri",
+        desc: "She's a history buff and beer enthusiast. We haven't seen her much as of late but she'll be back.",
+        img: bri
     }
 ]
 
@@ -103,11 +103,11 @@ export const additionalMembersArray = [
         desc: "Much like Jim, she is good for answering pop-culture and music questions from the 70s, 80s, and 90s.",
         img: celeste
     },
-    {
-        name: "Sam",
-        desc: "Sam has attended 2 trivia events...................................................",
-        img: sam
-    },
+    // {
+    //     name: "Sam",
+    //     desc: "Sam has attended 2 trivia events...................................................",
+    //     img: sam
+    // }
 ]
 
 export const stickerCollection = [
@@ -265,7 +265,7 @@ export const stickerCollection = [
         image: sticker27,
         date: "July 31st, 2025",
         location: "Santucci's Original Square Pizza",
-        round: "Music? (double check...)"
+        round: "Music"
     },
     {
         image: sticker28,
