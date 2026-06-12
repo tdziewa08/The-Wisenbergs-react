@@ -42,12 +42,16 @@ import sticker25 from "./assets/sticker-images/sticker25.png"
 import sticker26 from "./assets/sticker-images/sticker26.png"
 import sticker27 from "./assets/sticker-images/sticker27.png"
 import sticker28 from "./assets/sticker-images/sticker28.png"
+import sticker29 from "./assets/sticker-images/sticker29.png"
+import sticker30 from "./assets/sticker-images/sticker30.png"
 
 //unknown stickers, still in the collection
 import mysterySticker1 from "./assets/sticker-images/mystery-sticker1.png"
 import mysterySticker2 from "./assets/sticker-images/mystery-sticker2.png"
 import mysterySticker3 from "./assets/sticker-images/mystery-sticker3.png"
 import mysterySticker4 from "./assets/sticker-images/mystery-sticker4.png"
+import mysterySticker5 from "./assets/sticker-images/mystery-sticker5.png"
+import mysterySticker6 from "./assets/sticker-images/mystery-sticker6.png"
 
 export const foundingMembersArray = [
     {
@@ -166,6 +170,12 @@ export const stickerCollection = [
         round: "Entertainment"
     },
     {
+        image: sticker29, //oops found this one late :)
+        date: "May 1, 2024",
+        location: "Merryman's Pub",
+        round: "Music"
+    },
+    {
         image: sticker11,
         date: "May 16th, 2024",
         location: "Westville Brewery",
@@ -274,6 +284,18 @@ export const stickerCollection = [
         round: "Sportsball (Round 5)"
     },
     {
+        image: sticker30,
+        date: "June 9, 2026",
+        location: "Bonesaw Brewery",
+        round: "Music"
+    },
+    {
+        image: sticker8, //NEEDED TO MAKE AN UNKNOWN STICKER
+        date: "Unknown",
+        location: "Unknown",
+        round: "Unknown"
+    },
+    {
         image: mysterySticker1,
         date: "Unknown",
         location: "Unknown",
@@ -298,11 +320,18 @@ export const stickerCollection = [
         round: "Unknown"
     },
     {
-        image: sticker8, //NEEDED TO MAKE AN UNKNOWN STICKER
+        image: mysterySticker5,
+        date: "Unknown",
+        location: "Unknown",
+        round: "Unknown"
+    },
+    {
+        image: mysterySticker6,
         date: "Unknown",
         location: "Unknown",
         round: "Unknown"
     }
+    
 ]
 
     // {
