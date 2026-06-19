@@ -619,7 +619,6 @@ Media Queries
 	}
 
 	.member {
-		width: 90%;
 		min-height: auto;
 	}
 
@@ -653,5 +652,62 @@ Media Queries
 
 	.stat-body {
 		font-size: 1.15rem;
+	}
+}
+
+/* Narrow mobile screen */
+@media screen and (max-width: 480px) {
+	.page {
+		width: 92%;
+	}
+
+	.header {
+		column-gap: 1.25em;
+		font-size: 1.15rem;
+	}
+
+	h1, h2 {
+		font-size: 1.6rem;
+	}
+
+	.home-page > p,
+	.sticker-page > p,
+	.mission {
+		font-size: 1rem;
+	}
+
+	.countdown-clock > h2 {
+		font-size: 1.35rem;
+	}
+
+	.time-unit {
+		width: 100%;
+		max-width: 200px;
+		padding: 0.45em 0.75em;
+	}
+
+	.number {
+		font-size: 1rem;
+	}
+
+	.label {
+		font-size: 0.95rem;
+	}
+
+	.member {
+		width: 100%;
+	}
+
+	.stats {
+		grid-template-columns: 1fr;
+		margin-top: 3em;
+	}
+
+	.stat-header {
+		font-size: 1.1rem;
+	}
+
+	.stat-body {
+		font-size: 1rem;
 	}
 }
