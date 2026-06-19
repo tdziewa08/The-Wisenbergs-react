@@ -562,3 +562,96 @@ Media Queries
 		font-size: 1.5rem;
 	}
 }
+
+/* Mobile screen */
+@media screen and (max-width: 768px) {
+	body {
+		/* background-color: red; */
+	}
+
+	.page {
+		width: 80%;
+	}
+
+	.header {
+		flex-wrap: wrap;
+		column-gap: 3.45em;
+		row-gap: 0.5em;
+		padding: 0.5em;
+	}
+
+	h1, h2 {
+		font-size: 2rem;
+	}
+
+	.home-page > p,
+	.sticker-page > p,
+	.mission {
+		font-size: 1.15rem;
+	}
+
+	.countdown-clock {
+		flex-direction: column;
+		row-gap: 0.75em;
+		padding: 0.75em 0.5em;
+	}
+
+	.countdown-display {
+		flex-wrap: wrap;
+		row-gap: 0.5em;
+		column-gap: 0.5em;
+	}
+
+	.time-unit {
+		width: auto;
+		width: 148px;
+		padding: 0.5em 1em;
+	}
+
+	.number {
+		font-size: 1.15rem;
+	}
+
+	.members-container {
+		grid-template-columns: 1fr;
+		row-gap: 2em;
+		justify-items: center;
+	}
+
+	.member {
+		width: 90%;
+		min-height: auto;
+	}
+
+	.member-name {
+		font-size: 1.25rem;
+	}
+
+	.member-desc {
+		font-size: 1rem;
+	}
+
+	.team-img-cluster,
+	.team-stats {
+		flex-direction: column;
+	}
+
+	.team-img-cluster > .team-img-container,
+	#triple-jawn-container,
+	.stats {
+		width: 100%;
+	}
+
+	.stats {
+		margin-top: 6em;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.stat-header {
+		font-size: 1.25rem;
+	}
+
+	.stat-body {
+		font-size: 1.15rem;
+	}
+}
