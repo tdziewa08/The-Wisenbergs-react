@@ -700,7 +700,7 @@ Media Queries
 
 	.stats {
 		grid-template-columns: 1fr;
-		margin-top: 6em;
+		margin-top: 8em;
 	}
 
 	.stat-header {
