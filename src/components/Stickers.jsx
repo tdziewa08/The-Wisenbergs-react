@@ -5,9 +5,9 @@ export default function Stickers() {
 
 const [stickers, setStickers] = React.useState(stickerCollection)
 
-const allStickers = stickers.map(sticker => {
+const allStickers = stickers.map((sticker, index) => {
     return (
-        <div className="sticker-container">
+        <div key={index}className="sticker-container">
             <div className="sticker">
                 <div className="face">
                     <img src={sticker.image} alt="THE FRONT"/>
